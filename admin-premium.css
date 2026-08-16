@@ -453,27 +453,179 @@ body:not(.light) select{
     border:1px solid #ddd;
     cursor:pointer;
 }
+
+
+
 /* =================================
-   MOBILE ONLY - THEME BUTTON POSITION
+   PATCH MOBILE DASHBOARD TITLE V1
+   ONLY MOBILE
 ================================= */
 
 @media(max-width:720px){
 
+.admin-head{
+    margin-bottom:15px !important;
+}
+
 .dashboard-title{
-    display:flex !important;
-    align-items:center !important;
-    justify-content:space-between !important;
-    gap:10px !important;
+    margin-bottom:8px !important;
 }
 
 .dashboard-title h1{
-    margin:0 !important;
+    font-size:24px !important;
+    line-height:1.2 !important;
 }
 
-.theme-toggle{
+#clock{
+    font-size:12px !important;
+    margin:6px 0 !important;
+}
+
+.admin-head p{
+    font-size:13px !important;
+    line-height:1.4 !important;
+    margin:5px 0 !important;
+}
+
+}
+
+
+/* =================================
+   PATCH MOBILE HEADER V2
+   ONLY MOBILE
+================================= */
+
+@media(max-width:720px){
+
+.admin-head{
+    padding:14px !important;
+    margin-bottom:12px !important;
+}
+
+.dashboard-title h1{
+    font-size:23px !important;
+}
+
+#clock{
+    color:#e5e7eb !important;
+    font-size:11px !important;
+    margin:4px 0 !important;
+}
+
+.admin-head > p{
+    font-size:12px !important;
+    margin-top:5px !important;
+}
+
+}
+
+
+
+/* =================================
+   MOBILE HEADER THEME BUTTON V3
+================================= */
+
+@media(max-width:720px){
+
+.header{
+    display:flex !important;
+    align-items:center !important;
+}
+
+.header .brand-logo{
     flex:none !important;
-    width:40px !important;
-    height:40px !important;
+}
+
+.header .theme-toggle{
+    margin-left:10px !important;
+    width:38px !important;
+    height:38px !important;
+    flex:none !important;
+}
+
+}
+
+
+/* =================================
+   MOBILE THEME BUTTON RIGHT V4
+================================= */
+
+@media(max-width:720px){
+
+.header{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+}
+
+.header .theme-toggle{
+    order:3 !important;
+    margin-left:auto !important;
+}
+
+.header .header-center{
+    display:none !important;
+}
+
+.header-actions{
+    margin-left:auto !important;
+}
+
+}
+
+
+/* =================================
+   MOBILE HEADER SPACING FIX V5
+================================= */
+
+@media(max-width:720px){
+
+.header{
+    justify-content:flex-start !important;
+    gap:0 !important;
+}
+
+.header .brand-logo{
+    margin-right:auto !important;
+}
+
+.header .theme-toggle{
+    margin-left:auto !important;
+    margin-right:12px !important;
+}
+
+}
+
+
+/* =================================
+   MOBILE HEADER ALIGN FIX V6
+================================= */
+
+@media(max-width:720px){
+
+.header{
+    min-height:70px !important;
+    padding:8px 15px !important;
+    align-items:center !important;
+}
+
+.header .brand-logo{
+    width:90px !important;
+    height:55px !important;
+    display:flex !important;
+    align-items:center !important;
+}
+
+.header .brand-logo img{
+    width:75px !important;
+    height:auto !important;
+    object-fit:contain !important;
+}
+
+.header .theme-toggle{
+    width:36px !important;
+    height:36px !important;
+    margin-right:0 !important;
 }
 
 }
