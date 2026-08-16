@@ -1,0 +1,69 @@
+/* =================================
+ MOBILE SEARCH FINAL CLEAN
+================================= */
+
+@media(max-width:720px){
+
+.header-actions .search{
+
+    display:flex !important;
+
+    position:relative !important;
+
+    width:30px !important;
+    height:30px !important;
+
+    background:none !important;
+
+    border:0 !important;
+
+    padding:0 !important;
+
+    align-items:center !important;
+    justify-content:center !important;
+
+    z-index:100002 !important;
+
+}
+
+
+/* lingkaran kaca */
+
+.header-actions .search::before{
+
+    content:"" !important;
+
+    width:13px !important;
+    height:13px !important;
+
+    border:2px solid #111 !important;
+
+    border-radius:50% !important;
+
+    position:absolute !important;
+
+}
+
+
+/* gagang */
+
+.header-actions .search::after{
+
+    content:"" !important;
+
+    width:8px !important;
+    height:2px !important;
+
+    background:#111 !important;
+
+    position:absolute !important;
+
+    right:5px !important;
+    bottom:7px !important;
+
+    transform:rotate(45deg) !important;
+
+}
+
+
+}

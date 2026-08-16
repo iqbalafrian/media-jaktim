@@ -1,0 +1,96 @@
+
+/* =================================
+   MOBILE DRAWER FIX
+================================= */
+
+
+@media(max-width:720px){
+
+
+.drawer-menu{
+
+
+    position:fixed !important;
+
+    top:0 !important;
+
+    right:0 !important;
+
+    width:260px !important;
+
+    height:100vh !important;
+
+    background:#fff !important;
+
+
+    z-index:99999 !important;
+
+
+    padding:70px 20px 20px !important;
+
+
+}
+
+
+
+/* judul drawer */
+
+.drawer-title{
+
+    display:block !important;
+
+    font-size:18px !important;
+
+    font-weight:700 !important;
+
+    margin-bottom:25px !important;
+
+    color:#111 !important;
+
+}
+
+
+
+/* link menu */
+
+.drawer-menu a{
+
+
+    display:block !important;
+
+    padding:14px 0 !important;
+
+
+    color:#111 !important;
+
+    text-decoration:none !important;
+
+    font-size:15px !important;
+
+
+}
+
+
+
+/* overlay */
+
+.drawer-overlay{
+
+
+    position:fixed !important;
+
+    inset:0 !important;
+
+
+    background:rgba(0,0,0,.4) !important;
+
+
+    z-index:99998 !important;
+
+}
+
+
+
+}
+
+

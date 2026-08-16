@@ -1,0 +1,63 @@
+
+/* =================================
+   MOBILE HEADER FIX
+================================= */
+
+
+@media(max-width:720px){
+
+
+header.header{
+
+    display:flex !important;
+
+    align-items:center !important;
+
+    justify-content:space-between !important;
+
+    height:70px !important;
+
+    padding:0 15px !important;
+
+    background:#fff !important;
+
+    position:relative !important;
+
+    z-index:10000 !important;
+
+}
+
+
+
+/* area kanan */
+
+.header-actions{
+
+    display:flex !important;
+
+    align-items:center !important;
+
+    gap:15px !important;
+
+    margin-left:auto !important;
+
+    visibility:visible !important;
+
+    opacity:1 !important;
+
+}
+
+
+
+/* jangan biarkan menu desktop muncul */
+
+.header nav,
+.main-menu{
+
+    display:none !important;
+
+}
+
+
+}
+

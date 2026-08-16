@@ -1,0 +1,5386 @@
+﻿:root{--orange:#f47718;--dark:#111;--muted:#6d6d6d;--line:#e9e9e9;--soft:#fafafa}*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--dark);background:#fff}a{text-decoration:none;color:inherit;cursor:pointer}.topbar{height:42px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 max(24px,calc((100% - 1200px)/2));font-size:12px;color:#555}.trend b,.section-title a,.cat-head a{color:var(--orange)}.trend span{margin:0 8px}.social{color:#111}.header{height:86px;display:flex;align-items:center;gap:30px;padding:0 max(24px,calc((100% - 1200px)/2));border-bottom:1px solid var(--line);position:sticky;top:0;background:#fff;z-index:10}.brand{width:105px;height:64px;border:2px solid var(--orange);border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;line-height:.82;font-size:16px;transform:rotate(-2deg);flex:none}.brand span{font-weight:500}.brand strong{font-size:23px;letter-spacing:-1.5px}.brand i{font-style:normal;color:var(--orange);font-size:27px;margin-top:-4px}.brand.small{width:76px;height:58px;font-size:12px}.brand.small strong{font-size:17px}nav{display:flex;gap:24px;align-items:center;flex:1;justify-content:center;font-size:12px;font-weight:700;white-space:nowrap}nav a{height:86px;display:flex;align-items:center;border-bottom:3px solid transparent}nav a.active{color:var(--orange);border-bottom-color:var(--orange)}.search{border:0;background:none;font-size:28px}.ticker{max-width:1200px;margin:10px auto 16px;display:flex;align-items:center;border:1px solid var(--line);height:42px;border-radius:4px;overflow:hidden;font-size:13px}.ticker b{background:var(--orange);color:#fff;height:100%;display:flex;align-items:center;padding:0 18px;font-size:11px}.ticker span{padding:0 16px;flex:1}.ticker button{height:100%;border:0;background:var(--orange);color:#fff;font-size:10px;font-weight:800;padding:0 15px}main{max-width:1200px;margin:auto}.hero-grid{display:grid;grid-template-columns:1.8fr 1fr;gap:12px}.hero{height:360px;position:relative;overflow:hidden;border-radius:4px}.hero>img{width:100%;height:100%;object-fit:cover}.overlay{position:absolute;inset:0;padding:38px 28px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(transparent 30%,rgba(0,0,0,.86))}.overlay label,.card label,.side-news label{width:max-content;background:var(--orange);color:#fff;padding:5px 8px;font-size:10px;font-weight:800}.overlay h1{color:#fff;font-size:34px;line-height:1.08;margin:12px 0 8px;max-width:750px}.overlay p{color:#eee;font-size:13px;margin:0 0 12px;max-width:650px}.overlay small{color:#ddd;font-size:11px}.side-news{display:flex;flex-direction:column;gap:10px}.side-news article{display:grid;grid-template-columns:130px 1fr;gap:12px;border:1px solid var(--line);padding:0;background:#fff;min-height:120px}.side-news img{width:130px;height:120px;object-fit:cover}.side-news div{padding:13px 10px 8px 0}.side-news label{background:none;color:var(--orange);padding:0;font-size:10px}.side-news h3{font-size:14px;line-height:1.25;margin:7px 0}.side-news small,.card small{font-size:10px;color:#777}.section{margin-top:34px}.section-title{display:flex;align-items:center;justify-content:space-between;border-left:4px solid var(--orange);padding-left:10px;margin-bottom:16px}.section-title h2{font-size:16px;margin:0}.section-title a{font-size:11px;font-weight:800}.cards{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.card{position:relative}.card img{width:100%;height:125px;object-fit:cover;border-radius:4px}.card label{position:relative;margin-top:-25px;display:block;margin-left:8px;width:max-content}.card h3{font-size:13px;line-height:1.35;margin:8px 0 7px}.category-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);margin-top:38px;border:1px solid var(--line)}.category{background:#fff;padding:18px}.cat-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}.cat-head h2{font-size:14px;margin:0}.cat-head a{font-size:9px;font-weight:800}.category article{display:grid;grid-template-columns:28px 1fr;gap:7px;padding:11px 0;border-top:1px solid var(--line);font-size:11px;line-height:1.35}.category article b{color:var(--orange)}.lower{display:grid;grid-template-columns:2fr 1fr;gap:28px;margin:38px 0}.video-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}.vimg{height:130px;position:relative;overflow:hidden;border-radius:4px}.vimg img{width:100%;height:100%;object-fit:cover}.vimg span{position:absolute;inset:0;display:grid;place-items:center;color:#fff;font-size:30px;text-shadow:0 2px 8px #000}.video-grid b{display:block;font-size:11px;line-height:1.35;margin-top:7px}.popular{border-left:1px solid var(--line);padding-left:20px}.popular ol{list-style:none;padding:0;margin:0}.popular li{display:flex;gap:12px;align-items:center;border-bottom:1px solid var(--line);padding:10px 0}.popular li b{width:28px;height:28px;background:var(--orange);color:#fff;border-radius:50%;display:grid;place-items:center;font-size:12px}.popular li span{font-size:11px;line-height:1.35}.newsletter{background:var(--orange);color:#fff;padding:20px max(24px,calc((100% - 1200px)/2));display:flex;align-items:center;justify-content:space-between;gap:30px}.newsletter>div{display:flex;gap:15px;align-items:center}.newsletter strong{font-size:36px}.newsletter h2{font-size:16px;margin:0 0 4px}.newsletter p{font-size:11px;margin:0}.newsletter form{display:flex}.newsletter input{width:250px;border:0;padding:12px}.newsletter button{border:1px solid #fff;background:transparent;color:#fff;padding:0 18px;font-weight:800;font-size:11px}footer{max-width:1200px;margin:auto;padding:38px 0;display:grid;grid-template-columns:1.6fr repeat(4,1fr);gap:35px}footer h4{font-size:11px;margin:0 0 15px}footer a,footer p{display:block;font-size:11px;color:#666;margin:0 0 10px;line-height:1.45}.footer-brand p{max-width:240px}.copyright{background:var(--orange);color:#fff;padding:10px max(24px,calc((100% - 1200px)/2));font-size:10px;display:flex;justify-content:space-between}@media(max-width:1000px){nav{gap:12px}.cards{grid-template-columns:repeat(3,1fr)}.category-grid{grid-template-columns:repeat(2,1fr)}footer{grid-template-columns:repeat(3,1fr);padding:30px 24px}}@media(max-width:720px){.topbar{padding:0 15px}.topbar .trend,.social{display:none}.header{height:70px;padding:0 15px}.brand{width:76px;height:54px}.brand strong{font-size:18px}nav{display:none}.search{margin-left:auto}.ticker{margin:8px 15px 12px}.ticker span{white-space:nowrap;overflow:hidden}.ticker button{display:none}main{padding:0 15px}.hero-grid{grid-template-columns:1fr}.hero{height:330px}.overlay h1{font-size:27px}.side-news{display:none}.cards{grid-template-columns:repeat(2,1fr)}.card img{height:120px}.category-grid{grid-template-columns:1fr}.lower{grid-template-columns:1fr}.video-grid{grid-template-columns:repeat(2,1fr)}.popular{border-left:0;padding-left:0}.newsletter{padding:20px 15px;display:block}.newsletter form{margin-top:14px}.newsletter input{width:100%}footer{grid-template-columns:1fr 1fr;padding:30px 15px}.footer-brand{grid-column:1/-1}.copyright{padding:10px 15px;display:block}.copyright span{display:block;margin-top:5px}}@media(max-width:430px){.cards{grid-template-columns:1fr}.video-grid{grid-template-columns:1fr 1fr}.newsletter form{display:flex}.newsletter input{width:70%}}
+
+.brand-logo{width:86px;height:62px;display:flex;align-items:center;justify-content:center;flex:none}.brand-logo img{width:64px;height:64px;object-fit:cover;border-radius:50%}.footer-logo img{width:70px;height:70px}.hero,.side-news article,.card{cursor:pointer}.admin-wrap{max-width:1200px;margin:30px auto;padding:0 20px}.admin-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.btn{border:0;background:var(--orange);color:#fff;padding:11px 16px;font-weight:800;border-radius:4px;cursor:pointer}.btn.secondary{background:#222}.btn.danger{background:#c62828}.admin-grid{display:grid;grid-template-columns:1fr 2fr;gap:20px}.panel{border:1px solid var(--line);padding:20px;background:#fff;border-radius:6px}.panel h2{font-size:18px;margin:0 0 15px}.field{margin-bottom:12px}.field label{display:block;font-size:11px;font-weight:800;margin-bottom:5px}.field input,.field select,.field textarea{width:100%;padding:10px;border:1px solid #ddd;border-radius:4px;font:inherit}.field textarea{min-height:140px;resize:vertical}.admin-table{width:100%;border-collapse:collapse;font-size:12px}.admin-table th,.admin-table td{padding:10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}.badge{display:inline-block;padding:4px 7px;border-radius:12px;font-size:9px;font-weight:800;background:#eee}.badge.published{background:#e8f5e9;color:#2e7d32}.badge.draft{background:#fff3e0;color:#e65100}.actions{display:flex;gap:6px;flex-wrap:wrap}.login{max-width:420px;margin:80px auto}.notice{font-size:12px;color:#666;line-height:1.5;background:#fff8f1;padding:12px;border-left:3px solid var(--orange);margin-bottom:15px}.article-page{max-width:850px;margin:40px auto;padding:0 20px}.article-page .category{display:inline-block;background:var(--orange);color:#fff;padding:6px 9px;font-size:10px;font-weight:800}.article-page h1{font-size:42px;line-height:1.08;margin:14px 0}.article-meta{font-size:12px;color:#777;margin-bottom:20px}.article-page .cover{width:100%;max-height:520px;object-fit:cover;border-radius:6px}.article-content{font-size:17px;line-height:1.8;margin-top:25px}.article-content p{margin:0 0 18px}.search-page{max-width:1200px;margin:35px auto;padding:0 20px}.search-box{display:flex;gap:10px;margin-bottom:25px}.search-box input{flex:1;padding:12px;border:1px solid #ddd}.result{display:grid;grid-template-columns:220px 1fr;gap:18px;padding:15px 0;border-bottom:1px solid var(--line)}.result img{width:220px;height:130px;object-fit:cover;border-radius:4px}@media(max-width:800px){.admin-grid{grid-template-columns:1fr}.article-page h1{font-size:30px}.result{grid-template-columns:1fr}.result img{width:100%;height:200px}}
+.login-error{margin-top:10px;padding:10px 12px;border-radius:8px;background:#fff1ed;color:#c63b16;font-size:13px;font-weight:600}
+
+.brand-logo img{
+width:120px;
+height:auto;
+object-fit:contain;
+}
+
+.footer-logo img{
+width:150px;
+height:auto;
+}
+
+header .brand-logo{
+display:flex;
+align-items:center;
+}
+
+
+.brand-logo img{
+    width:150px;
+    height:auto;
+    max-height:80px;
+    object-fit:contain;
+    display:block;
+}
+
+.footer-logo img{
+    width:180px;
+    height:auto;
+    object-fit:contain;
+}
+
+
+/* MEDIA JAKTIM BRAND FIX */
+
+.brand-logo img{
+width:150px;
+height:auto;
+max-height:80px;
+object-fit:contain;
+display:block;
+}
+
+
+.footer-logo img{
+width:180px;
+height:auto;
+object-fit:contain;
+}
+
+
+.hero img,
+.card img,
+.side-news img{
+object-fit:cover;
+}
+
+
+
+/* =====================
+ADMIN CMS RESPONSIVE FIX
+===================== */
+
+
+.admin-wrap{
+
+max-width:1200px;
+margin:auto;
+padding:30px;
+
+}
+
+
+.admin-grid{
+
+display:grid;
+grid-template-columns:350px 1fr;
+gap:25px;
+align-items:start;
+
+}
+
+
+.panel{
+
+background:white;
+
+}
+
+
+input,
+textarea,
+select{
+
+font-size:16px;
+
+}
+
+
+textarea{
+
+min-height:120px;
+
+}
+
+
+.admin-table{
+
+width:100%;
+font-size:14px;
+
+}
+
+
+
+@media(max-width:600px){
+
+.admin-grid{
+
+grid-template-columns:1fr;
+
+}
+
+
+.admin-wrap{
+
+padding:15px;
+
+}
+
+}
+
+
+
+
+/* ADMIN FINAL SIZE FIX */
+
+.admin-wrap{
+max-width:1200px !important;
+width:95% !important;
+margin:40px auto !important;
+}
+
+
+.admin-grid{
+display:grid !important;
+grid-template-columns:360px 1fr !important;
+gap:25px !important;
+}
+
+
+.panel{
+box-sizing:border-box;
+}
+
+
+@media(max-width:600px){
+
+.admin-grid{
+grid-template-columns:1fr !important;
+}
+
+}
+
+
+
+/* ===== MEDIA JAKTIM PORTAL STABLE MODE ===== */
+
+*{
+box-sizing:border-box;
+}
+
+
+html,body{
+width:100%;
+min-width:320px;
+margin:0;
+padding:0;
+}
+
+
+img{
+max-width:100%;
+height:auto;
+display:block;
+}
+
+
+main,
+.container,
+.ticker,
+header,
+footer{
+width:100%;
+}
+
+
+main{
+max-width:1200px;
+margin-left:auto;
+margin-right:auto;
+}
+
+
+.brand-logo img{
+width:120px;
+height:auto;
+object-fit:contain;
+}
+
+
+
+.hero{
+min-height:380px;
+overflow:hidden;
+}
+
+
+.hero img{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+
+
+
+.cards{
+display:grid;
+grid-template-columns:repeat(5,1fr);
+gap:15px;
+}
+
+
+
+@media(max-width:1100px){
+
+.cards{
+grid-template-columns:repeat(3,1fr);
+}
+
+}
+
+
+
+@media(max-width:700px){
+
+.cards{
+grid-template-columns:1fr;
+}
+
+
+main{
+padding:15px;
+}
+
+}
+
+
+/* ARTICLE CLICK */
+
+.hero h1,
+.side-news h3,
+.card h3{
+cursor:pointer;
+}
+
+
+.card,
+.side-news article,
+.article-link{
+cursor:pointer;
+}
+
+
+/* ARTICLE PORTAL STYLE */
+
+
+.article-page{
+
+max-width:850px;
+margin:50px auto;
+}
+
+
+.article-category{
+
+color:#ff7300;
+font-weight:bold;
+margin-bottom:15px;
+
+}
+
+
+.article-title{
+
+font-size:42px;
+line-height:1.2;
+
+}
+
+
+.article-info{
+
+color:#777;
+margin:20px 0;
+
+}
+
+
+.article-cover{
+
+width:100%;
+border-radius:8px;
+margin:30px 0;
+
+}
+
+
+.article-body{
+
+font-size:18px;
+line-height:1.8;
+
+}
+
+
+.related{
+
+margin-top:50px;
+
+}
+
+
+.related-list{
+
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+
+}
+
+
+.related-card{
+
+cursor:pointer;
+
+}
+
+
+.related-card img{
+
+width:100%;
+height:160px;
+object-fit:cover;
+
+}
+
+
+
+@media(max-width:700px){
+
+.article-title{
+
+font-size:28px;
+
+}
+
+
+.related-list{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+
+/* ===== MEDIA JAKTIM PORTAL V2 ===== */
+
+
+.hero img{
+
+width:100%;
+height:420px;
+object-fit:cover;
+
+}
+
+
+
+.overlay{
+
+padding:25px;
+
+}
+
+
+
+.hero h1{
+
+cursor:pointer;
+
+font-size:38px;
+
+}
+
+
+
+.side-news article,
+.card{
+
+cursor:pointer;
+
+}
+
+
+
+.card img,
+.side-news img{
+
+width:100%;
+height:180px;
+object-fit:cover;
+
+}
+
+
+
+.article-page{
+
+max-width:900px;
+margin:40px auto;
+
+}
+
+
+
+.article-title{
+
+font-size:44px;
+line-height:1.2;
+
+}
+
+
+
+.article-cover{
+
+width:100%;
+margin:30px 0;
+
+}
+
+
+
+.article-body{
+
+font-size:18px;
+line-height:1.8;
+
+}
+
+
+
+@media(max-width:700px){
+
+
+.article-title{
+
+font-size:28px;
+
+}
+
+
+.hero h1{
+
+font-size:26px;
+
+}
+
+}
+
+
+
+/* CATEGORY SEARCH */
+
+
+.category-menu{
+
+display:flex;
+gap:20px;
+padding:15px;
+overflow:auto;
+
+}
+
+
+.category-menu a{
+
+text-decoration:none;
+font-weight:bold;
+color:#222;
+
+}
+
+
+
+.search-box{
+
+max-width:1200px;
+margin:20px auto;
+
+}
+
+
+.search-box input{
+
+width:100%;
+padding:15px;
+border-radius:8px;
+border:1px solid #ddd;
+font-size:16px;
+
+}
+
+
+
+.card{
+
+cursor:pointer;
+
+}
+
+
+.card img{
+
+height:200px;
+object-fit:cover;
+width:100%;
+
+}
+
+
+
+.overlay{
+
+cursor:pointer;
+
+}
+
+
+
+.search-box{
+display:flex;
+align-items:center;
+width:220px;
+height:40px;
+border:1px solid #e9e9e9;
+border-radius:6px;
+padding:0 12px;
+background:#fff;
+}
+
+.search-box input{
+width:100%;
+height:100%;
+border:0;
+outline:none;
+font-size:13px;
+font-family:Inter,Arial,sans-serif;
+}
+
+.search-box input::placeholder{
+color:#999;
+}
+
+
+.header .search-box{
+width:220px;
+height:40px;
+display:flex;
+align-items:center;
+flex:none;
+margin:0;
+padding:0 12px;
+border:1px solid #e9e9e9;
+border-radius:6px;
+background:#fff;
+}
+
+.header .search-box input{
+width:100%;
+height:100%;
+border:0;
+outline:none;
+padding:0;
+font-size:13px;
+}
+
+
+html,body{
+overflow-x:hidden;
+}
+
+.header{
+gap:15px;
+}
+
+.header nav{
+min-width:0;
+}
+
+.header .search-box{
+max-width:220px;
+}
+
+
+/* ==========================
+MEDIA JAKTIM PORTAL POLISH V1
+========================== */
+
+
+/* HEADER PREMIUM */
+
+.header{
+    backdrop-filter:blur(10px);
+    box-shadow:0 2px 12px rgba(0,0,0,.05);
+}
+
+
+nav a{
+    position:relative;
+    transition:.25s;
+}
+
+
+nav a:hover{
+    color:var(--orange);
+}
+
+
+/* HERO NEWS STYLE */
+
+.hero{
+    border-radius:14px;
+    box-shadow:0 12px 35px rgba(0,0,0,.12);
+}
+
+
+.hero>img{
+    transition:.5s;
+}
+
+
+.hero:hover img{
+    transform:none;
+}
+
+
+.overlay{
+    padding:45px 35px;
+    background:
+    linear-gradient(
+    transparent 20%,
+    rgba(0,0,0,.9)
+    );
+}
+
+
+.overlay label{
+    border-radius:20px;
+    padding:6px 14px;
+}
+
+
+.overlay h1{
+    letter-spacing:-.5px;
+}
+
+
+/* SIDE NEWS */
+
+.side-news article{
+    border-radius:12px;
+    overflow:hidden;
+    transition:.25s;
+}
+
+
+.side-news article:hover{
+    transform:translateY(-4px);
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+
+/* CARD BERITA */
+
+.card{
+    border-radius:12px;
+    overflow:hidden;
+    transition:.25s;
+}
+
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+
+.card img{
+    border-radius:12px;
+    transition:.4s;
+}
+
+
+.card:hover img{
+    transform:none;
+}
+
+
+.card h3{
+    font-size:15px;
+}
+
+
+/* SECTION TITLE */
+
+.section-title{
+    margin-top:45px;
+}
+
+
+.section-title h2{
+    font-size:20px;
+    letter-spacing:-.3px;
+}
+
+
+/* TICKER */
+
+.ticker{
+    border-radius:10px;
+    box-shadow:0 4px 15px rgba(0,0,0,.05);
+}
+
+
+/* MOBILE */
+
+@media(max-width:720px){
+
+.hero{
+height:360px;
+border-radius:12px;
+}
+
+.overlay{
+padding:25px;
+}
+
+.overlay h1{
+font-size:25px;
+}
+
+
+}
+
+
+
+
+/* ==========================
+MEDIA JAKTIM HEADER FIX V2
+========================== */
+
+.header{
+    position:sticky;
+    top:0;
+    z-index:999;
+    background:#fff;
+    height:86px;
+}
+
+.brand-logo{
+    flex-shrink:0;
+    width:160px;
+}
+
+.brand-logo img{
+    max-width:140px;
+}
+
+.header nav{
+    flex:1;
+    overflow:hidden;
+}
+
+.header nav a{
+    padding:0 8px;
+    white-space:nowrap;
+}
+
+.search,
+.search-box{
+    flex-shrink:0;
+}
+
+.search-box input{
+    width:180px;
+}
+
+
+@media(max-width:1100px){
+
+.header{
+    gap:10px;
+}
+
+.header nav a{
+    font-size:11px;
+}
+
+}
+
+
+@media(max-width:720px){
+
+.header{
+    height:70px;
+}
+
+.brand-logo{
+    width:110px;
+}
+
+.brand-logo img{
+    width:100px;
+}
+
+.header nav{
+    display:none;
+}
+
+.search-box{
+    display:none;
+}
+
+}
+
+
+
+/* ==========================
+HEADER RESPONSIVE V3
+========================== */
+
+.header{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:#fff;
+}
+
+
+.brand-logo{
+    width:130px;
+    flex-shrink:0;
+}
+
+
+.brand-logo img{
+    width:120px;
+    max-width:120px;
+}
+
+
+.header nav{
+    flex:1;
+    overflow:hidden;
+    justify-content:center;
+}
+
+
+.header nav a{
+    font-size:12px;
+    padding:0 6px;
+    white-space:nowrap;
+}
+
+
+.search-box{
+    flex-shrink:0;
+}
+
+
+.search-box input{
+    width:160px;
+}
+
+
+@media(max-width:1200px){
+
+.header{
+    gap:10px;
+}
+
+.brand-logo{
+    width:110px;
+}
+
+.brand-logo img{
+    width:100px;
+}
+
+.header nav a{
+    font-size:11px;
+}
+
+.search-box input{
+    width:130px;
+}
+
+}
+
+
+@media(max-width:600px){
+
+.header nav{
+    display:none;
+}
+
+.search-box{
+    display:none;
+}
+
+}
+
+
+
+/* ==========================
+SEARCH TOGGLE PORTAL MODE
+========================== */
+
+.search{
+    cursor:pointer;
+    font-size:24px;
+}
+
+
+.search-box{
+    position:absolute;
+    top:86px;
+    left:0;
+    right:0;
+    background:#fff;
+    padding:15px 40px;
+    border-bottom:1px solid #eee;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    display:none;
+    z-index:999;
+}
+
+
+.search-box.active{
+    display:block;
+}
+
+
+.search-box input{
+    width:100%;
+    height:45px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    padding:0 15px;
+    font-size:16px;
+}
+
+
+@media(max-width:600px){
+
+.search-box{
+    top:70px;
+    padding:12px 15px;
+}
+
+}
+
+
+/* ==========================
+SEARCH POSITION FIX
+========================== */
+
+
+.header{
+    position:relative;
+}
+
+
+.search-box{
+    position:absolute;
+    top:70px;
+    right:0;
+    left:auto;
+    width:360px;
+    padding:15px;
+    border-radius:0 0 10px 10px;
+}
+
+
+.search-box input{
+    width:100%;
+}
+
+
+@media(max-width:600px){
+
+.search-box{
+    width:100%;
+    right:0;
+}
+
+}
+
+
+/* ==========================
+SEARCH HIDE STATE FIX
+========================== */
+
+.search-box{
+    display:none !important;
+}
+
+
+.search-box.active{
+    display:block !important;
+}
+
+
+/* ==========================
+MEDIA JAKTIM STICKY HEADER FINAL
+========================== */
+
+.header{
+    position:sticky !important;
+    top:0;
+    z-index:9999;
+    background:#fff;
+}
+
+
+/* shadow saat scroll */
+
+.header{
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+
+/* logo tetap */
+
+.brand-logo{
+    flex-shrink:0;
+}
+
+
+/* search panel tetap di bawah header */
+
+.search-box{
+    z-index:10000;
+}
+
+
+/* ==========================
+MEDIA JAKTIM FIXED HEADER FINAL
+========================== */
+
+.header{
+    position:fixed !important;
+    top:0;
+    left:0;
+    right:0;
+    height:86px;
+    z-index:9999;
+    background:#fff;
+}
+
+
+/* ruang supaya konten tidak ketutup */
+
+body{
+    padding-top:86px;
+}
+
+
+/* search tetap di bawah icon */
+
+.search-box{
+    z-index:10000;
+}
+
+
+/* ==========================
+TOPBAR + HEADER STICKY FIX
+========================== */
+
+.topbar{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:10000;
+    background:#fff;
+}
+
+
+/* geser header di bawah topbar */
+
+.header{
+    position:fixed !important;
+    top:42px;
+    left:0;
+    right:0;
+    z-index:9999;
+    background:#fff;
+}
+
+
+/* beri ruang untuk dua bar */
+
+body{
+    padding-top:128px;
+}
+
+.search-box{
+    z-index:10001;
+}
+
+
+/* =========================
+   NEWS CARD CLEAN FIX
+========================= */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+.card{
+background:#fff;
+border-radius:14px;
+overflow:hidden;
+position:relative;
+min-height:300px;
+cursor:pointer;
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+display:block;
+}
+
+.card h3{
+font-size:18px;
+line-height:1.25;
+margin:12px 12px 8px;
+
+display:-webkit-box;
+-webkit-line-clamp:2;
+-webkit-box-orient:vertical;
+overflow:hidden;
+}
+
+.card label{
+display:inline-block;
+margin:0 12px 15px;
+
+background:#ff6b00;
+color:white;
+
+padding:5px 10px;
+
+font-size:12px;
+font-weight:bold;
+
+border-radius:3px;
+}
+
+
+@media(max-width:900px){
+
+.cards{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+@media(max-width:600px){
+
+.cards{
+grid-template-columns:1fr;
+}
+
+}
+
+
+/* =========================
+ PORTAL NEWS POLISH
+========================= */
+
+
+/* HERO CLEAN */
+
+.hero{
+position:relative;
+overflow:hidden;
+border-radius:16px;
+}
+
+
+.hero img{
+width:100%;
+height:420px;
+object-fit:cover;
+}
+
+
+.hero .overlay{
+
+position:absolute;
+left:0;
+bottom:0;
+
+width:100%;
+padding:35px 30px;
+
+background:
+linear-gradient(
+transparent,
+rgba(0,0,0,.85)
+);
+
+}
+
+
+.hero h1{
+
+font-size:42px;
+line-height:1.1;
+margin:10px 0;
+
+}
+
+
+.hero p{
+
+font-size:18px;
+
+}
+
+
+/* CARD IMAGE CLEAN */
+
+.card{
+background:white;
+}
+
+
+.card img{
+
+height:200px;
+object-fit:cover;
+
+}
+
+
+
+/* HILANGKAN JUDUL KELUAR */
+
+.card h3{
+
+height:48px;
+
+}
+
+
+
+/* SIDEBAR */
+
+.side-news article{
+
+background:white;
+border:1px solid var(--line);
+border-radius:12px;
+overflow:hidden;
+margin-bottom:10px;
+
+display:grid;
+grid-template-columns:130px 1fr;
+
+}
+
+.side-news img{
+
+width:130px;
+height:120px;
+
+object-fit:cover;
+
+}
+
+
+.side-news div{
+
+padding:12px;
+
+}
+
+
+.side-news h3{
+
+font-size:14px;
+line-height:1.25;
+margin:7px 0;
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+.hero h1{
+font-size:28px;
+}
+
+.hero img{
+height:300px;
+}
+
+
+}
+
+
+/* =========================
+ CARD TITLE FINAL FIX
+========================= */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+align-items:start;
+}
+
+
+.card{
+
+display:flex;
+flex-direction:column;
+
+background:#fff;
+
+height:auto;
+min-height:0;
+
+overflow:hidden;
+
+}
+
+
+.card img{
+
+position:relative;
+
+width:100%;
+height:200px;
+
+object-fit:cover;
+
+flex-shrink:0;
+
+}
+
+
+.card h3{
+
+position:relative;
+
+display:block;
+
+height:auto;
+
+min-height:55px;
+
+margin:15px;
+
+font-size:18px;
+
+line-height:1.35;
+
+overflow:visible;
+
+}
+
+
+.card label{
+
+margin:0 15px 15px;
+
+align-self:flex-start;
+
+}
+
+
+@media(max-width:900px){
+
+.cards{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+
+@media(max-width:600px){
+
+.cards{
+grid-template-columns:1fr;
+}
+
+}
+
+
+/* ==========================
+   CARD LAYOUT HARD RESET
+========================== */
+
+.cards{
+display:grid !important;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+}
+
+
+.card{
+
+display:flex !important;
+flex-direction:column !important;
+
+height:auto !important;
+min-height:330px !important;
+
+background:#fff;
+
+overflow:hidden;
+
+position:relative !important;
+
+}
+
+
+.card img{
+
+display:block !important;
+
+width:100% !important;
+
+height:190px !important;
+
+object-fit:cover !important;
+
+position:relative !important;
+
+}
+
+
+.card h3{
+
+display:block !important;
+
+position:relative !important;
+
+margin:14px 12px 8px !important;
+
+height:auto !important;
+
+min-height:45px;
+
+font-size:17px;
+
+line-height:1.35;
+
+color:#111;
+
+}
+
+
+.card label{
+
+position:relative !important;
+
+display:inline-block !important;
+
+margin:0 12px 15px !important;
+
+align-self:flex-start;
+
+}
+
+
+
+/* ==========================
+ FINAL CARD OVERRIDE
+========================== */
+
+.cards .card{
+
+position:relative !important;
+
+display:flex !important;
+
+flex-direction:column !important;
+
+overflow:hidden !important;
+
+height:auto !important;
+
+}
+
+
+.cards .card img{
+
+position:relative !important;
+
+top:auto !important;
+left:auto !important;
+
+width:100% !important;
+
+height:180px !important;
+
+object-fit:cover !important;
+
+transform:none !important;
+
+}
+
+
+.cards .card h3{
+
+position:static !important;
+
+display:block !important;
+
+margin:12px !important;
+
+padding:0 !important;
+
+height:auto !important;
+
+min-height:45px !important;
+
+color:#111 !important;
+
+font-size:16px !important;
+
+line-height:1.35 !important;
+
+}
+
+
+.cards .card label{
+
+position:static !important;
+
+margin:0 12px 15px !important;
+
+display:inline-block !important;
+
+}
+
+
+
+/* ==========================
+ CARD HEIGHT FINAL FIX
+========================== */
+
+.cards .card{
+    height:auto !important;
+    min-height:0 !important;
+    overflow:hidden !important;
+}
+
+
+.cards .card img{
+    height:160px !important;
+}
+
+
+.cards .card h3{
+    height:auto !important;
+    min-height:42px !important;
+    margin:12px !important;
+}
+
+
+.cards .card label{
+    margin:0 12px 12px !important;
+}
+
+
+
+
+/* HERO POLISH */
+.hero{
+height:380px;
+}
+
+.overlay{
+padding:70px 28px 28px;
+justify-content:flex-end;
+}
+
+.overlay h1{
+font-size:32px;
+line-height:1.08;
+margin:10px 0 8px;
+max-width:700px;
+}
+
+.overlay p{
+font-size:14px;
+line-height:1.45;
+max-width:620px;
+margin-bottom:10px;
+display:-webkit-box;
+-webkit-line-clamp:3;
+-webkit-box-orient:vertical;
+overflow:hidden;
+}
+
+
+/* HERO FINAL CLEAN */
+.hero .overlay{
+    padding:30px 28px 28px;
+}
+
+.hero .overlay h1{
+    font-size:32px;
+    line-height:1.1;
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+
+.hero .overlay p{
+    font-size:14px;
+    line-height:1.35;
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+
+
+.hero .overlay p{
+max-height:60px;
+overflow:hidden;
+}
+
+
+/* HERO EXCERPT SHORT AUTO */
+.hero .overlay p{
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    max-height:58px;
+    line-height:1.35;
+}
+
+
+/* HERO PHOTO FOCUS */
+.hero .overlay{
+    background:linear-gradient(
+        transparent 45%,
+        rgba(0,0,0,.55)
+    );
+    padding:20px 28px 24px;
+}
+
+.hero .overlay h1{
+    font-size:28px;
+    line-height:1.12;
+    max-width:600px;
+    margin:8px 0;
+}
+
+.hero .overlay p{
+    font-size:13px;
+    line-height:1.35;
+    max-width:500px;
+    -webkit-line-clamp:2;
+    max-height:40px;
+}
+
+.hero .overlay label{
+    font-size:10px;
+    padding:4px 8px;
+}
+
+
+/* HERO PHOTO FOCUS */
+.hero .overlay{
+    background:linear-gradient(
+        transparent 45%,
+        rgba(0,0,0,.55)
+    );
+    padding:20px 28px 24px;
+}
+
+.hero .overlay h1{
+    font-size:28px;
+    line-height:1.12;
+    max-width:600px;
+    margin:8px 0;
+}
+
+.hero .overlay p{
+    font-size:13px;
+    line-height:1.35;
+    max-width:500px;
+    -webkit-line-clamp:2;
+    max-height:40px;
+}
+
+.hero .overlay label{
+    font-size:10px;
+    padding:4px 8px;
+}
+
+
+/* HERO TEXT FINAL */
+.hero .overlay{
+    background:linear-gradient(
+        transparent 35%,
+        rgba(0,0,0,.65)
+    ) !important;
+}
+
+.hero .overlay h1{
+    font-size:26px !important;
+    max-width:560px;
+    line-height:1.15;
+}
+
+.hero .overlay p{
+    display:block !important;
+    font-size:13px !important;
+    max-width:450px;
+    line-height:1.3;
+    margin:5px 0;
+    max-height:38px;
+    overflow:hidden;
+}
+
+
+/* ARTICLE PAGE POLISH */
+
+.article-page{
+    max-width:900px;
+    margin:30px auto;
+    padding:0 24px;
+}
+
+.article-page .back{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-bottom:25px;
+    font-size:14px;
+    color:#555;
+}
+
+.article-page .cover{
+    width:100%;
+    max-height:520px;
+    object-fit:cover;
+    border-radius:12px;
+    margin:20px 0 35px;
+}
+
+.article-page h1{
+    font-size:42px;
+    line-height:1.15;
+    margin:20px 0;
+}
+
+.article-meta{
+    color:#777;
+    font-size:13px;
+    margin-bottom:25px;
+}
+
+.article-content{
+    font-size:18px;
+    line-height:1.85;
+    color:#222;
+}
+
+.article-content p{
+    margin-bottom:24px;
+}
+
+
+/* mobile */
+@media(max-width:700px){
+
+.article-page{
+    padding:0 15px;
+}
+
+.article-page h1{
+    font-size:30px;
+}
+
+.article-content{
+    font-size:16px;
+}
+
+}
+
+
+/* ARTICLE REAL POLISH */
+
+.article-title{
+    font-size:42px;
+    line-height:1.15;
+    max-width:900px;
+    margin:25px auto 15px;
+}
+
+.article-cover{
+    width:100%;
+    max-height:520px;
+    object-fit:cover;
+    border-radius:12px;
+    margin:20px auto 35px;
+    display:block;
+}
+
+.article-content{
+    max-width:820px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.85;
+}
+
+.article-content p{
+    margin-bottom:24px;
+}
+
+.article-info,
+.article-meta{
+    max-width:820px;
+    margin:auto;
+    color:#777;
+    font-size:13px;
+}
+
+
+@media(max-width:700px){
+
+.article-title{
+    font-size:30px;
+}
+
+.article-content{
+    font-size:16px;
+}
+
+.article-cover{
+    max-height:350px;
+}
+
+}
+
+
+/* ARTICLE PAGE FINAL */
+
+#article-detail{
+    max-width:900px;
+    margin:40px auto;
+    padding:0 24px;
+}
+
+
+.article-category{
+    display:inline-block;
+    background:#f47718;
+    color:white;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+
+.article-title{
+    font-size:42px;
+    line-height:1.15;
+    margin:10px 0 15px;
+    color:#111;
+}
+
+
+.article-meta{
+    font-size:13px;
+    color:#777;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+
+.article-cover{
+    width:100%;
+    max-height:520px;
+    object-fit:cover;
+    border-radius:12px;
+    display:block;
+    margin-bottom:35px;
+}
+
+
+.article-body{
+    font-size:18px;
+    line-height:1.85;
+    color:#222;
+}
+
+
+.article-body p{
+    margin-bottom:24px;
+}
+
+
+@media(max-width:700px){
+
+#article-detail{
+    padding:0 15px;
+}
+
+.article-title{
+    font-size:30px;
+}
+
+.article-body{
+    font-size:16px;
+}
+
+.article-cover{
+    max-height:350px;
+}
+
+}
+
+
+/* ARTICLE IMAGE SIZE CONTROL */
+
+.article-cover{
+    width:100%;
+    max-width:900px;
+    height:520px;
+    object-fit:cover;
+    border-radius:12px;
+    display:block;
+    margin:25px auto 35px;
+}
+
+
+/* artikel content image */
+.article-body img{
+    max-width:100%;
+    height:auto;
+    border-radius:10px;
+    margin:20px 0;
+}
+
+
+@media(max-width:700px){
+
+.article-cover{
+    height:320px;
+}
+
+}
+
+
+/* ARTICLE PREMIUM LAYOUT */
+
+#article-detail{
+    max-width:1000px;
+    margin:40px auto;
+    padding:0 25px;
+}
+
+
+/* kategori */
+
+.article-category{
+    display:inline-block;
+    background:#f47718;
+    color:#fff;
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+
+/* judul */
+
+.article-title{
+    font-size:44px;
+    line-height:1.12;
+    max-width:900px;
+    margin:10px 0 15px;
+}
+
+
+/* info */
+
+.article-meta{
+    color:#777;
+    font-size:13px;
+    margin-bottom:30px;
+}
+
+
+/* FOTO UTAMA */
+
+.article-cover{
+
+    width:100%;
+    height:560px;
+
+    object-fit:cover;
+
+    border-radius:14px;
+
+    display:block;
+
+    margin:0 auto 40px;
+
+}
+
+
+/* ISI */
+
+.article-body{
+
+    max-width:780px;
+
+    margin:auto;
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    color:#222;
+
+}
+
+
+.article-body p{
+
+    margin-bottom:28px;
+
+}
+
+
+/* MOBILE */
+
+@media(max-width:700px){
+
+.article-title{
+    font-size:30px;
+}
+
+.article-cover{
+    height:320px;
+}
+
+.article-body{
+    font-size:16px;
+}
+
+}
+
+
+
+/* ADMIN IMAGE CROP */
+
+#cropBox{
+background:#fafafa;
+border:1px solid #ddd;
+padding:15px;
+border-radius:8px;
+}
+
+#cropTarget{
+max-width:100%;
+}
+
+
+/* FINAL FLAT ICON */
+
+.hamburger,
+.search{
+
+border:0;
+background:none;
+cursor:pointer;
+font-family:Arial,sans-serif;
+
+}
+
+.hamburger{
+font-size:30px;
+}
+
+.search{
+font-size:27px;
+}
+
+
+/* DRAWER MENU */
+
+.drawer-menu{
+
+position:absolute;
+right:20px;
+top:75px;
+
+width:220px;
+
+background:#fff;
+
+border:1px solid #ddd;
+border-radius:10px;
+
+padding:15px;
+
+display:none;
+
+box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+z-index:9999;
+
+}
+
+
+.drawer-menu.active{
+
+display:block;
+
+}
+
+
+.drawer-title{
+
+font-weight:800;
+font-size:14px;
+
+margin-bottom:10px;
+
+color:#f47718;
+
+}
+
+
+.drawer-menu a{
+
+display:block;
+
+padding:10px 5px;
+
+font-size:13px;
+
+font-weight:700;
+
+border-bottom:1px solid #eee;
+
+cursor:pointer;
+
+}
+
+
+.drawer-menu a:hover{
+
+color:#f47718;
+
+}
+
+
+
+/* PREMIUM DRAWER */
+
+.drawer-menu{
+
+position:fixed;
+
+top:0;
+right:-320px;
+
+height:100vh;
+width:280px;
+
+background:#fff;
+
+padding:30px 20px;
+
+display:block;
+
+transition:.35s ease;
+
+box-shadow:-8px 0 25px rgba(0,0,0,.2);
+
+z-index:9999;
+
+}
+
+
+.drawer-menu.active{
+
+right:0;
+
+}
+
+
+.drawer-title{
+
+font-size:18px;
+
+font-weight:900;
+
+margin-bottom:25px;
+
+color:#f47718;
+
+border-bottom:2px solid #f47718;
+
+padding-bottom:12px;
+
+}
+
+
+.drawer-menu a{
+
+display:block;
+
+padding:14px 8px;
+
+font-size:14px;
+
+font-weight:700;
+
+border-bottom:1px solid #eee;
+
+cursor:pointer;
+
+}
+
+
+.drawer-menu a:hover{
+
+background:#f47718;
+
+color:white;
+
+border-radius:6px;
+
+}
+
+
+.drawer-overlay{
+
+position:fixed;
+
+inset:0;
+
+background:rgba(0,0,0,.45);
+
+display:none;
+
+z-index:9998;
+
+}
+
+
+.drawer-overlay.active{
+
+display:block;
+
+}
+
+
+
+/* ARTICLE PREMIUM */
+
+.article-page{
+
+max-width:1200px;
+margin:35px auto;
+padding:0 20px;
+
+}
+
+
+.article-layout{
+
+display:grid;
+grid-template-columns:2fr 1fr;
+gap:35px;
+
+}
+
+
+.article-main{
+
+background:#fff;
+
+}
+
+
+.article-category{
+
+display:inline-block;
+background:#f47718;
+color:#fff;
+
+padding:6px 12px;
+
+border-radius:20px;
+
+font-size:11px;
+font-weight:800;
+
+}
+
+
+.article-title{
+
+font-size:44px;
+line-height:1.12;
+
+margin:18px 0;
+
+letter-spacing:-.5px;
+
+}
+
+
+.article-excerpt{
+
+font-size:18px;
+
+color:#555;
+
+line-height:1.6;
+
+margin-bottom:18px;
+
+}
+
+
+.article-meta{
+
+font-size:12px;
+
+color:#777;
+
+margin-bottom:25px;
+
+}
+
+
+.article-cover{
+
+width:100%;
+
+height:520px;
+
+object-fit:cover;
+
+border-radius:8px;
+
+}
+
+
+.article-body{
+
+font-size:18px;
+
+line-height:1.9;
+
+color:#222;
+
+margin-top:30px;
+
+}
+
+
+.article-sidebar{
+
+border-left:1px solid #eee;
+
+padding-left:20px;
+
+}
+
+
+.article-sidebar h3{
+
+font-size:16px;
+
+border-left:4px solid #f47718;
+
+padding-left:10px;
+
+}
+
+
+.article-side-item{
+
+display:flex;
+
+gap:12px;
+
+margin-bottom:18px;
+
+}
+
+
+.article-side-item img{
+
+width:100px;
+
+height:70px;
+
+object-fit:cover;
+
+border-radius:5px;
+
+}
+
+
+.article-side-item b{
+
+font-size:13px;
+
+line-height:1.3;
+
+}
+
+
+@media(max-width:900px){
+
+.article-layout{
+
+grid-template-columns:1fr;
+
+}
+
+
+.article-sidebar{
+
+border:0;
+
+padding:0;
+
+}
+
+
+.article-title{
+
+font-size:32px;
+
+}
+
+
+.article-cover{
+
+height:320px;
+
+}
+
+}
+
+
+/* ARTICLE WIDTH FINAL FIX */
+
+.article-page{
+max-width:1200px!important;
+margin:40px auto!important;
+padding:0 20px!important;
+}
+
+
+.article-layout{
+display:grid!important;
+grid-template-columns:2fr 1fr!important;
+gap:35px!important;
+}
+
+
+.article-cover{
+height:500px!important;
+object-fit:cover!important;
+}
+
+
+
+/* ARTICLE FINAL POLISH */
+
+.article-title{
+font-size:38px!important;
+line-height:1.15!important;
+letter-spacing:-.3px;
+}
+
+
+.article-cover{
+height:420px!important;
+object-fit:cover!important;
+}
+
+
+.article-excerpt{
+font-size:17px!important;
+max-width:800px;
+}
+
+
+.article-sidebar{
+position:sticky;
+top:100px;
+height:max-content;
+}
+
+
+.article-side-item img{
+width:110px!important;
+height:75px!important;
+object-fit:cover!important;
+}
+
+
+@media(max-width:900px){
+
+.article-title{
+font-size:30px!important;
+}
+
+.article-cover{
+height:300px!important;
+}
+
+}
+
+
+/* FINAL MOBILE HAMBURGER FIX */
+
+@media(max-width:720px){
+
+.header{
+    display:flex;
+    align-items:center;
+}
+
+.header .search-box{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    margin-left:auto;
+}
+
+.hamburger{
+    display:block !important;
+    font-size:30px;
+    padding:0;
+    line-height:1;
+}
+
+.search{
+    display:block;
+}
+
+}
+
+
+/* FORCE HAMBURGER VISIBILITY V2 */
+
+@media(max-width:720px){
+
+.header{
+    position:sticky;
+    top:0;
+    z-index:9999;
+}
+
+.header .search-box{
+    display:flex !important;
+    align-items:center;
+    margin-left:auto;
+    position:relative;
+    z-index:10000;
+}
+
+.header .hamburger{
+    display:flex !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    width:40px;
+    height:40px;
+    align-items:center;
+    justify-content:center;
+    color:#111;
+    position:relative;
+    z-index:10001;
+}
+
+}
+
+
+/* ARTICLE HAMBURGER FORCE SHOW */
+
+@media(max-width:720px){
+
+.header{
+    display:flex !important;
+    align-items:center !important;
+}
+
+.header nav{
+    display:none !important;
+}
+
+.header .search-box{
+    display:flex !important;
+    align-items:center !important;
+    margin-left:auto !important;
+    width:auto !important;
+}
+
+.header .hamburger{
+    display:flex !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    position:relative !important;
+    z-index:99999 !important;
+}
+
+}
+
+
+
+
+
+/* ================================
+   ADMIN MOBILE POLISH
+================================ */
+
+@media(max-width:800px){
+
+.admin-wrap{
+    margin:15px auto;
+    padding:0 12px;
+}
+
+.admin-head{
+    display:block;
+}
+
+.admin-head h1{
+    font-size:24px;
+}
+
+.admin-head .actions{
+    margin-top:15px;
+}
+
+.panel{
+    padding:15px;
+}
+
+.field input,
+.field select,
+.field textarea{
+    font-size:16px;
+    padding:13px;
+}
+
+.field textarea{
+    min-height:180px;
+}
+
+.btn{
+    min-height:44px;
+    padding:12px 18px;
+    font-size:14px;
+}
+
+.actions{
+    gap:8px;
+}
+
+.admin-table{
+    display:block;
+    overflow-x:auto;
+    white-space:nowrap;
+}
+
+
+/* tombol simpan lebih mudah ditekan */
+button[type="submit"]{
+    width:100%;
+    margin-top:10px;
+}
+
+}
+
+
+/* ================================
+   ADMIN DESKTOP MODE
+================================ */
+
+@media(min-width:1200px){
+
+.admin-wrap{
+    max-width:1500px;
+    margin:35px auto;
+    padding:0 30px;
+}
+
+.admin-head h1{
+    font-size:32px;
+}
+
+.admin-grid{
+    grid-template-columns:420px 1fr;
+    gap:30px;
+    align-items:start;
+}
+
+.panel{
+    padding:25px;
+}
+
+.admin-grid .panel:first-child{
+    position:sticky;
+    top:20px;
+}
+
+.field input,
+.field select{
+    height:44px;
+}
+
+.field textarea{
+    min-height:180px;
+}
+
+button[type="submit"]{
+    width:100%;
+    height:48px;
+    font-size:16px;
+}
+
+
+/* tabel berita desktop */
+
+.admin-table{
+    font-size:14px;
+}
+
+.admin-table th{
+    background:#fafafa;
+}
+
+.admin-table td{
+    padding:14px;
+}
+
+
+}
+
+
+/* FIX ADMIN DESKTOP STICKY FORM */
+
+@media(min-width:1200px){
+
+.admin-grid{
+    align-items:start;
+}
+
+.admin-grid .panel:first-child{
+    position:sticky;
+    position:-webkit-sticky;
+    top:20px;
+    height:fit-content;
+    align-self:start;
+}
+
+}
+
+
+/* =================================
+   ADMIN DESKTOP FORCE MODE FINAL
+================================= */
+
+@media(min-width:1200px){
+
+.admin-wrap{
+    max-width:1500px;
+    margin:30px auto;
+    padding:0 30px;
+}
+
+.admin-grid{
+    display:grid;
+    grid-template-columns:420px minmax(700px,1fr);
+    gap:30px;
+    align-items:start;
+}
+
+.admin-grid > .panel:first-child{
+    position:sticky;
+    top:20px;
+    height:max-content;
+    align-self:start;
+}
+
+.admin-grid > .panel:nth-child(2){
+    min-width:0;
+}
+
+}
+
+
+/* =================================
+   ADMIN DESKTOP FORM SCROLL MODE
+================================= */
+
+@media(min-width:1200px){
+
+.admin-grid{
+    align-items:start;
+}
+
+/* form kiri */
+.admin-grid > .panel:first-child{
+    max-height: calc(100vh - 180px);
+    overflow-y:auto;
+}
+
+/* scrollbar lebih rapi */
+.admin-grid > .panel:first-child::-webkit-scrollbar{
+    width:6px;
+}
+
+.admin-grid > .panel:first-child::-webkit-scrollbar-thumb{
+    background:#ccc;
+    border-radius:10px;
+}
+
+
+/* daftar berita */
+.admin-grid > .panel:nth-child(2){
+    min-height:500px;
+}
+
+
+/* rapikan row berita */
+
+.admin-table td{
+    padding:12px 10px;
+}
+
+
+}
+
+/* =========================
+   ADMIN MOBILE RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+.admin-wrap{
+    padding:15px;
+    margin:15px auto;
+}
+
+.admin-head{
+    display:block;
+}
+
+.admin-head .actions{
+    margin-top:15px;
+}
+
+.admin-grid{
+    display:block;
+}
+
+.admin-grid .panel{
+    margin-bottom:20px;
+}
+
+#categoryMenu{
+    display:none !important;
+    flex-direction:column;
+}
+
+#categoryMenu.show{
+    display:flex !important;
+}
+
+#categoryMenu .btn{
+    width:100%;
+}
+
+.admin-table{
+    display:block;
+}
+
+.admin-table thead{
+    display:none;
+}
+
+.admin-table tbody{
+    display:block;
+}
+
+.admin-table tr{
+    display:block;
+    border:1px solid #ddd;
+    margin-bottom:15px;
+    padding:12px;
+    border-radius:8px;
+}
+
+.admin-table td{
+    display:block;
+    border:0;
+    padding:6px;
+}
+
+.admin-table td img{
+    width:100%;
+    max-width:250px;
+    height:auto;
+}
+
+.admin-table .btn{
+    width:100%;
+    margin-top:5px;
+}
+
+}
+/* MOBILE ADMIN CARD IMAGE FIX */
+@media(max-width:768px){
+
+.admin-table td img{
+    width:120px;
+    height:80px;
+    object-fit:cover;
+    border-radius:6px;
+}
+
+.admin-table tr{
+    padding:10px;
+}
+
+.admin-table td:first-child{
+    display:grid;
+    grid-template-columns:130px 1fr;
+    gap:12px;
+    align-items:start;
+}
+
+.admin-table td:first-child img{
+    grid-row:1 / span 3;
+}
+
+.admin-table .btn{
+    width:auto;
+    display:inline-block;
+    padding:10px 20px;
+}
+
+.admin-table td:last-child{
+    white-space:normal;
+}
+
+}
+
+/* MOBILE LANDSCAPE ADMIN MODE */
+@media(max-width:768px){
+
+body{
+    overflow-x:auto;
+}
+
+.admin-wrap{
+    min-width:900px;
+    padding:15px;
+}
+
+
+.admin-grid{
+    display:grid;
+    grid-template-columns:320px 560px;
+    gap:20px;
+}
+
+
+.admin-table{
+    min-width:560px;
+}
+
+
+.admin-table td img{
+    width:100px;
+    height:70px;
+    object-fit:cover;
+}
+
+
+.panel{
+    padding:15px;
+}
+
+
+}
+
+
+/* FORCE ADMIN TWO COLUMN MOBILE LANDSCAPE */
+
+@media(max-width:768px){
+
+.admin-grid{
+    display:grid !important;
+    grid-template-columns:320px 600px !important;
+    gap:20px !important;
+    width:940px !important;
+}
+
+
+.admin-grid .panel{
+    width:auto !important;
+}
+
+
+.admin-wrap{
+    width:940px !important;
+    min-width:940px !important;
+}
+
+
+body{
+    overflow-x:auto !important;
+}
+
+
+}
+
+
+/* ADMIN LANDSCAPE FLUID WIDTH */
+
+@media(max-width:768px){
+
+.admin-wrap{
+    width:100% !important;
+    min-width:900px !important;
+}
+
+
+.admin-grid{
+    width:100% !important;
+    grid-template-columns:320px minmax(600px,1fr) !important;
+}
+
+
+.admin-grid .panel:nth-child(2){
+    width:100%;
+}
+
+
+}
+
+
+/* SIMPLE ADMIN LANDSCAPE */
+
+@media(max-width:768px){
+
+.admin-wrap{
+    min-width:850px;
+}
+
+
+.admin-grid{
+    display:grid !important;
+    grid-template-columns:300px 520px !important;
+    gap:15px;
+}
+
+
+.admin-table{
+    width:100%;
+}
+
+
+.admin-table td{
+    white-space:normal;
+    word-break:normal;
+}
+
+
+.admin-table td:first-child{
+    width:45%;
+}
+
+
+}
+
+
+/* ADMIN COMPACT MOBILE LANDSCAPE */
+
+@media(max-width:768px){
+
+.admin-wrap{
+    min-width:700px !important;
+}
+
+
+.admin-grid{
+    grid-template-columns:280px 420px !important;
+    gap:10px !important;
+}
+
+
+.admin-table{
+    table-layout:auto !important;
+}
+
+
+.admin-table tr{
+    display:grid;
+    grid-template-columns:110px 1fr;
+    gap:10px;
+    padding:10px;
+}
+
+
+.admin-table td{
+    padding:4px !important;
+}
+
+
+.admin-table td:first-child{
+    display:grid;
+    grid-template-columns:100px 1fr;
+    gap:10px;
+}
+
+
+.admin-table td:first-child img{
+    width:90px;
+    height:70px;
+    object-fit:cover;
+}
+
+
+.admin-table td:nth-child(2),
+.admin-table td:nth-child(3),
+.admin-table td:nth-child(4){
+    grid-column:2;
+}
+
+
+.admin-table .btn{
+    width:auto !important;
+    padding:8px 15px !important;
+}
+
+
+}
+
+
+/* ADMIN MOBILE LIST FINAL */
+
+@media(max-width:768px){
+
+.admin-wrap{
+    min-width:0 !important;
+    width:100% !important;
+    padding:10px !important;
+}
+
+
+.admin-grid{
+    display:block !important;
+}
+
+
+.admin-grid .panel:first-child{
+    display:none;
+}
+
+
+.admin-table{
+    width:100% !important;
+    table-layout:auto !important;
+}
+
+
+.admin-table tr{
+    display:block !important;
+    padding:10px !important;
+    margin-bottom:12px;
+}
+
+
+.admin-table td{
+    display:block !important;
+    width:100% !important;
+    padding:3px !important;
+    overflow:visible !important;
+}
+
+
+.admin-table td:first-child{
+    display:flex !important;
+    gap:10px;
+    align-items:flex-start;
+}
+
+
+.admin-table td:first-child img{
+    width:90px !important;
+    height:65px !important;
+    object-fit:cover;
+    flex:none;
+}
+
+
+.admin-table td:first-child div{
+    flex:1;
+}
+
+
+.admin-table td:nth-child(2),
+.admin-table td:nth-child(3){
+    display:inline-block !important;
+    width:auto !important;
+    margin-right:15px;
+}
+
+
+.admin-table .btn{
+    width:auto !important;
+    padding:6px 12px !important;
+    font-size:12px !important;
+    margin-top:5px;
+}
+
+
+}
+
+
+/* NEWS TITLE MAX 3 LINES */
+
+.admin-table td:first-child{
+    max-width:260px;
+}
+
+
+.admin-table td:first-child b,
+.admin-table td:first-child strong{
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+
+
+@media(max-width:768px){
+
+.admin-table td:first-child{
+    display:flex !important;
+    gap:10px;
+}
+
+
+.admin-table td:first-child > div{
+    min-width:0;
+}
+
+
+.admin-table td:first-child b,
+.admin-table td:first-child strong{
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    line-height:1.3;
+}
+
+}
+
+
+/* NEWS TITLE MAX 3 LINES */
+
+.admin-table td:first-child{
+    max-width:260px;
+}
+
+
+.admin-table td:first-child b,
+.admin-table td:first-child strong{
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+
+
+@media(max-width:768px){
+
+.admin-table td:first-child{
+    display:flex !important;
+    gap:10px;
+}
+
+
+.admin-table td:first-child > div{
+    min-width:0;
+}
+
+
+.admin-table td:first-child b,
+.admin-table td:first-child strong{
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    line-height:1.3;
+}
+
+}
+
+
+/* RESTORE ADMIN FORM */
+
+@media(max-width:768px){
+
+.admin-grid{
+    display:grid !important;
+    grid-template-columns:280px 1fr !important;
+    gap:15px !important;
+}
+
+
+.admin-grid .panel:first-child{
+    display:block !important;
+}
+
+
+}
+
+
+/* ===== ADMIN MOBILE COMPACT FIX ===== */
+
+@media(max-width:768px){
+
+.admin-table{
+    width:100% !important;
+    table-layout:fixed !important;
+}
+
+.admin-table tr{
+    display:grid !important;
+    grid-template-columns:90px 1fr !important;
+    gap:10px !important;
+    padding:12px !important;
+    margin-bottom:12px !important;
+    border:1px solid #ddd !important;
+    border-radius:8px !important;
+}
+
+.admin-table td{
+    display:block !important;
+    padding:5px !important;
+    border:0 !important;
+}
+
+
+/* area berita */
+.admin-table td:nth-child(1){
+    grid-column:1 / 3 !important;
+}
+
+
+/* gambar */
+.admin-table td img{
+    width:90px !important;
+    height:60px !important;
+    object-fit:cover !important;
+}
+
+
+/* judul maksimal 3 baris */
+.admin-table td:nth-child(1){
+    max-width:100% !important;
+    overflow:hidden !important;
+}
+
+
+/* tombol */
+.admin-table td:nth-child(4){
+    display:flex !important;
+    gap:6px !important;
+}
+
+.admin-table .btn{
+    width:auto !important;
+    padding:7px 12px !important;
+    font-size:11px !important;
+}
+
+
+}
+
+/* hilangkan geser samping */
+html,body{
+    overflow-x:hidden !important;
+}
+
+
+/* ===== FORCE MOBILE ADMIN SINGLE COLUMN ===== */
+
+@media(max-width:768px){
+
+.admin-wrap{
+    width:100% !important;
+    max-width:100% !important;
+    padding:15px !important;
+    box-sizing:border-box !important;
+}
+
+
+.admin-grid{
+    display:block !important;
+    grid-template-columns:none !important;
+    width:100% !important;
+}
+
+
+.admin-grid > .panel{
+    width:100% !important;
+    max-width:100% !important;
+    margin-bottom:20px !important;
+}
+
+
+/* daftar berita turun ke bawah */
+
+.admin-grid > .panel:nth-child(2){
+    margin-top:20px !important;
+}
+
+
+/* cegah horizontal overflow */
+
+body,
+html{
+    overflow-x:hidden !important;
+}
+
+
+}
+
+
+/* ===== RESIZE DAFTAR BERITA COMPACT ===== */
+
+.admin-grid .panel:nth-child(2){
+    height:auto !important;
+    min-height:0 !important;
+}
+
+
+.admin-table{
+    width:100% !important;
+}
+
+
+.admin-table tr{
+    height:auto !important;
+}
+
+
+.admin-table td{
+    padding:6px 8px !important;
+    vertical-align:middle !important;
+}
+
+
+/* gambar berita */
+
+.admin-table td img{
+    width:80px !important;
+    height:55px !important;
+    object-fit:cover !important;
+}
+
+
+/* judul berita */
+
+.admin-table td:first-child{
+    line-height:1.2 !important;
+}
+
+
+/* jarak antar berita */
+
+.admin-table tr{
+    border-bottom:1px solid #ddd !important;
+}
+
+
+/* tombol */
+
+.admin-table .btn{
+    padding:6px 10px !important;
+    font-size:11px !important;
+}
+
+
+
+/* ===== ADMIN NEWS LIST COMPACT ===== */
+
+.admin-table{
+    font-size:12px !important;
+}
+
+
+.admin-table th,
+.admin-table td{
+    padding:5px 8px !important;
+    line-height:1.2 !important;
+}
+
+
+.admin-table tr{
+    height:auto !important;
+}
+
+
+.admin-table td:first-child{
+    width:45% !important;
+}
+
+
+/* foto */
+
+.admin-table td img{
+    width:70px !important;
+    height:45px !important;
+    object-fit:cover !important;
+    border-radius:4px;
+}
+
+
+/* judul berita */
+
+.admin-table td:first-child div,
+.admin-table td:first-child a{
+    display:-webkit-box !important;
+    -webkit-line-clamp:3 !important;
+    -webkit-box-orient:vertical !important;
+    overflow:hidden !important;
+}
+
+
+/* penulis */
+
+.admin-table td:first-child small{
+    font-size:10px !important;
+}
+
+
+/* tombol aksi */
+
+.admin-table .btn{
+    padding:5px 9px !important;
+    font-size:10px !important;
+    border-radius:3px !important;
+}
+
+
+.actions{
+    gap:4px !important;
+}
+
+
+/* panel daftar berita */
+
+.admin-grid .panel:nth-child(2){
+    padding:12px !important;
+}
+
+
+
+/* ===== REMOVE NEWS ITEM BOX ===== */
+
+.admin-table tr{
+    border:0 !important;
+    border-radius:0 !important;
+    padding:0 !important;
+    margin:0 !important;
+    background:none !important;
+}
+
+
+.admin-table td{
+    border-bottom:1px solid #ddd !important;
+    padding:8px !important;
+}
+
+
+.admin-table tbody tr:last-child td{
+    border-bottom:0 !important;
+}
+
+
+/* hilangkan card effect mobile */
+
+@media(max-width:768px){
+
+.admin-table tr{
+    display:table-row !important;
+}
+
+
+.admin-table td{
+    display:table-cell !important;
+}
+
+
+.admin-table tbody{
+    display:table-row-group !important;
+}
+
+
+}
+
+
+/* ===== NEWS TITLE SHOW ALL ===== */
+
+.admin-table td:first-child div,
+.admin-table td:first-child a,
+.admin-table td:first-child strong,
+.admin-table td:first-child b{
+    display:block !important;
+    -webkit-line-clamp:unset !important;
+    -webkit-box-orient:unset !important;
+    overflow:visible !important;
+    white-space:normal !important;
+    text-overflow:unset !important;
+}
+
+
+.admin-table td:first-child{
+    white-space:normal !important;
+    word-break:normal !important;
+    line-height:1.4 !important;
+}
+
+
+
+/* ===== NEWS LIST CUSTOM LAYOUT ===== */
+
+.admin-table{
+    table-layout:fixed !important;
+}
+
+
+.admin-table td{
+    vertical-align:top !important;
+}
+
+
+/* area berita */
+
+.admin-table td:first-child{
+    width:45% !important;
+}
+
+
+/* foto */
+
+.admin-table td:first-child img{
+    width:90px !important;
+    height:60px !important;
+    object-fit:cover !important;
+    float:left;
+    margin-right:10px;
+}
+
+
+/* judul 3 baris */
+
+.admin-table td:first-child{
+    line-height:1.35 !important;
+}
+
+
+.admin-table td:first-child .title,
+.admin-table td:first-child strong,
+.admin-table td:first-child b{
+    display:-webkit-box !important;
+    -webkit-line-clamp:3 !important;
+    -webkit-box-orient:vertical !important;
+    overflow:hidden !important;
+}
+
+
+/* kategori */
+
+.admin-table td:nth-child(2){
+    font-size:11px !important;
+    font-weight:bold;
+}
+
+
+/* status */
+
+.admin-table td:nth-child(3){
+    font-size:11px !important;
+}
+
+
+/* tombol */
+
+.admin-table td:nth-child(4) .btn{
+    padding:4px 8px !important;
+    font-size:10px !important;
+    margin:2px !important;
+}
+
+
+/* rapatkan jarak */
+
+.admin-table td{
+    padding:6px !important;
+}
+
+
+
+/* ===== REMOVE EMPTY SPACE NEWS LIST ===== */
+
+.admin-table{
+    table-layout:auto !important;
+    width:100% !important;
+}
+
+
+.admin-table td:first-child{
+    width:auto !important;
+    max-width:none !important;
+}
+
+
+.admin-table td:nth-child(2){
+    width:100px !important;
+}
+
+
+.admin-table td:nth-child(3){
+    width:90px !important;
+}
+
+
+.admin-table td:nth-child(4){
+    width:120px !important;
+}
+
+
+.admin-table td{
+    padding:6px !important;
+}
+
+
+/* judul 3 baris */
+
+.admin-table td:first-child strong,
+.admin-table td:first-child b,
+.admin-table td:first-child div{
+    display:-webkit-box !important;
+    -webkit-line-clamp:3 !important;
+    -webkit-box-orient:vertical !important;
+    overflow:hidden !important;
+}
+
+
+
+/* ===== SMALL ACTION BUTTON ===== */
+
+.admin-table td:last-child .btn{
+    padding:3px 7px !important;
+    font-size:9px !important;
+    line-height:1.2 !important;
+    border-radius:3px !important;
+    margin:1px !important;
+}
+
+
+.admin-table td:last-child{
+    white-space:nowrap !important;
+}
+
+
+
+/* ===== MINI ACTION BUTTON ===== */
+
+.admin-table td:last-child .btn{
+    padding:2px 5px !important;
+    font-size:8px !important;
+    line-height:1 !important;
+    border-radius:2px !important;
+    height:22px !important;
+}
+
+
+.admin-table td:last-child{
+    white-space:nowrap !important;
+    width:80px !important;
+}
+
+
+
+/* ===== ACTION BUTTON AUTO SIZE ===== */
+
+.admin-table td:last-child .btn{
+    display:inline-flex !important;
+    width:auto !important;
+    min-width:0 !important;
+    height:auto !important;
+
+    padding:3px 6px !important;
+
+    font-size:9px !important;
+    line-height:1 !important;
+
+    border-radius:3px !important;
+
+    margin:1px !important;
+}
+
+
+.admin-table td:last-child{
+    white-space:nowrap !important;
+}
+
+
+
+/* ===== POLISH ACTION BUTTON ===== */
+
+.admin-table td:last-child .btn{
+    display:inline-flex !important;
+    align-items:center;
+    justify-content:center;
+
+    width:auto !important;
+    min-width:auto !important;
+
+    padding:8px 12px !important;
+
+    font-size:11px !important;
+    font-weight:800 !important;
+
+    line-height:1 !important;
+
+    border-radius:5px !important;
+
+    margin:2px !important;
+}
+
+
+.admin-table td:last-child{
+    vertical-align:middle;
+    white-space:nowrap;
+}
+
+
+
+/* SMALL EDIT DELETE BUTTON */
+
+.admin-table td:last-child .btn{
+    padding:5px 8px !important;
+    font-size:10px !important;
+    border-radius:4px !important;
+    height:26px !important;
+    min-width:0 !important;
+}
+
+
+/* FIX BUTTON EDIT HAPUS KECIL RAPI */
+
+.admin-table .actions .btn,
+.admin-table td:last-child .btn{
+    padding:6px 10px !important;
+    font-size:11px !important;
+    height:auto !important;
+    width:auto !important;
+    min-width:auto !important;
+    line-height:1.2 !important;
+    border-radius:4px !important;
+}
+
+
+/* ==========================
+   ADMIN NEWS LIST COMPACT
+========================== */
+
+
+.admin-table{
+    width:100%;
+}
+
+
+.admin-table tr{
+    display:grid;
+    grid-template-columns:120px 1fr 120px;
+    gap:15px;
+    align-items:center;
+
+    padding:12px 0;
+    border-bottom:1px solid #ddd;
+}
+
+
+.admin-table td{
+    border:0 !important;
+    padding:0 !important;
+}
+
+
+/* FOTO */
+
+.admin-table td:first-child img{
+    width:120px;
+    height:80px;
+    object-fit:cover;
+    border-radius:5px;
+}
+
+
+/* JUDUL */
+
+.admin-table td:first-child{
+    font-weight:700;
+}
+
+
+/* sembunyikan jarak */
+
+.admin-table td{
+    vertical-align:middle;
+}
+
+
+/* tombol */
+
+.admin-table .btn{
+    padding:5px 8px !important;
+    font-size:10px !important;
+    border-radius:4px !important;
+}
+
+
+/* mobile */
+
+@media(max-width:768px){
+
+.admin-table tr{
+
+    grid-template-columns:90px 1fr 70px;
+    gap:8px;
+
+}
+
+
+.admin-table td:first-child img{
+
+    width:90px;
+    height:65px;
+
+}
+
+
+.admin-table .btn{
+
+    padding:4px 6px !important;
+    font-size:9px !important;
+
+}
+
+}
+
+
+
+/* ===== ADMIN NEWS EXACT LIST ===== */
+
+.admin-table thead{
+    display:none;
+}
+
+
+.admin-table tbody{
+    display:block;
+}
+
+
+.admin-table tr{
+    display:grid;
+    grid-template-columns:140px 1fr 90px;
+    grid-template-rows:auto auto;
+    column-gap:12px;
+
+    padding:12px 0;
+    border-bottom:1px solid #ccc;
+}
+
+
+.admin-table td{
+    border:0 !important;
+    padding:0 !important;
+}
+
+
+/* berita utama */
+.admin-table td:nth-child(1){
+    grid-column:1 / 3;
+    grid-row:1 / 3;
+}
+
+
+/* kategori */
+.admin-table td:nth-child(2){
+    grid-column:1;
+    grid-row:1;
+    font-size:12px;
+}
+
+
+/* status */
+.admin-table td:nth-child(3){
+    grid-column:2;
+    grid-row:1;
+    font-size:12px;
+}
+
+
+/* aksi */
+.admin-table td:nth-child(4){
+    grid-column:3;
+    grid-row:2;
+}
+
+
+.admin-table img{
+    width:140px;
+    height:85px;
+    object-fit:cover;
+    float:left;
+    margin-right:12px;
+}
+
+
+.admin-table td:first-child{
+    font-weight:700;
+}
+
+
+.admin-table .btn{
+    padding:5px 8px !important;
+    font-size:10px !important;
+}
+
+
+@media(max-width:768px){
+
+.admin-table tr{
+    grid-template-columns:90px 1fr 70px;
+}
+
+
+.admin-table img{
+    width:90px;
+    height:60px;
+}
+
+
+}
+
+
+.news-row{
+display:grid;
+grid-template-columns:90px 100px 1fr 100px;
+gap:10px;
+align-items:center;
+padding:12px 0;
+border-bottom:1px solid #ddd;
+}
+
+.news-content{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.news-content img{
+width:90px;
+height:60px;
+object-fit:cover;
+border-radius:4px;
+}
+
+.news-text b{
+display:-webkit-box;
+-webkit-line-clamp:3;
+-webkit-box-orient:vertical;
+overflow:hidden;
+}
+
+.news-text small{
+display:block;
+margin-top:8px;
+}
+
+.news-action .btn{
+padding:5px 8px;
+font-size:10px;
+}
+
+
+/* ===== ACTION BESIDE TITLE ===== */
+
+.news-content{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+}
+
+
+.news-text{
+    flex:1;
+    min-width:0;
+}
+
+
+.news-action{
+    display:flex !important;
+    gap:5px;
+    margin-top:2px;
+    flex:none;
+}
+
+
+.news-action .btn{
+    padding:4px 8px !important;
+    font-size:10px !important;
+    white-space:nowrap;
+}
+
+
+.news-text b{
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+
+
+
+/* ===== ADMIN NORMAL WIDTH ===== */
+
+.admin-grid{
+    grid-template-columns:350px 750px !important;
+    gap:20px !important;
+}
+
+.admin-grid .panel:nth-child(2){
+    width:750px !important;
+}
+
+
+
+/* ===== NEWS ALIGN FINAL ===== */
+
+.news-head{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:8px;
+    font-size:13px;
+}
+
+
+.news-body{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+}
+
+
+.news-body img{
+    width:90px !important;
+    height:60px !important;
+    object-fit:cover;
+    flex:none;
+}
+
+
+.news-text{
+    flex:1;
+    min-width:0;
+}
+
+
+.news-text b{
+    font-size:14px;
+    line-height:1.3;
+
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+
+
+.news-text small{
+    display:block;
+    margin-top:10px;
+    font-size:11px;
+}
+
+
+.news-action{
+    display:flex;
+    align-items:flex-end;
+    gap:5px;
+    margin-top:35px;
+}
+
+
+.news-action .btn{
+    padding:5px 9px !important;
+    font-size:10px !important;
+    height:26px;
+}
+
+
+.news-row td{
+    padding:12px 0 !important;
+    border-bottom:1px solid #ccc;
+}
+
+
+
+/* =================================
+   CLEAN NEWS LIST FINAL OVERRIDE
+================================= */
+
+.news-list{
+    width:100%;
+}
+
+
+.news-item{
+    width:100%;
+    display:block;
+    padding:12px 0;
+    border-bottom:1px solid #ddd;
+}
+
+
+/* kategori + status */
+
+.news-top{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    font-size:12px;
+    margin-bottom:10px;
+}
+
+
+/* foto + judul + tombol */
+
+.news-row{
+    display:grid !important;
+    grid-template-columns:90px minmax(0,1fr) auto !important;
+    align-items:center !important;
+    gap:12px !important;
+
+    width:100% !important;
+}
+
+
+/* foto */
+
+.news-img{
+    width:90px !important;
+    height:60px !important;
+    object-fit:cover !important;
+    border-radius:4px;
+}
+
+
+/* judul */
+
+.news-info{
+    width:auto !important;
+    min-width:0 !important;
+}
+
+
+.news-title{
+    display:block !important;
+
+    font-size:14px !important;
+    font-weight:700 !important;
+
+    line-height:1.35 !important;
+
+    white-space:normal !important;
+
+    overflow:hidden !important;
+}
+
+
+/* penulis */
+
+.news-info small{
+    display:block;
+    margin-top:8px;
+    font-size:11px;
+}
+
+
+/* tombol */
+
+.news-buttons{
+    display:flex !important;
+    flex-direction:row !important;
+    gap:5px !important;
+}
+
+
+.news-buttons .btn{
+    display:inline-flex !important;
+
+    width:auto !important;
+    height:26px !important;
+
+    padding:5px 8px !important;
+
+    font-size:10px !important;
+    line-height:1 !important;
+}
+
+
+/* matikan efek tabel lama */
+
+.admin-table{
+    display:block !important;
+}
+
+.admin-table tbody{
+    display:block !important;
+}
+
+.admin-table tr{
+    display:block !important;
+}
+
+
+.admin-table td{
+    display:block !important;
+}
+
+
+
+/* =================================
+   CLEAN NEWS LIST FINAL OVERRIDE
+================================= */
+
+.news-list{
+    width:100%;
+}
+
+
+.news-item{
+    width:100%;
+    display:block;
+    padding:12px 0;
+    border-bottom:1px solid #ddd;
+}
+
+
+/* kategori + status */
+
+.news-top{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    font-size:12px;
+    margin-bottom:10px;
+}
+
+
+/* foto + judul + tombol */
+
+.news-row{
+    display:grid !important;
+    grid-template-columns:90px minmax(0,1fr) auto !important;
+    align-items:center !important;
+    gap:12px !important;
+
+    width:100% !important;
+}
+
+
+/* foto */
+
+.news-img{
+    width:90px !important;
+    height:60px !important;
+    object-fit:cover !important;
+    border-radius:4px;
+}
+
+
+/* judul */
+
+.news-info{
+    width:auto !important;
+    min-width:0 !important;
+}
+
+
+.news-title{
+    display:block !important;
+
+    font-size:14px !important;
+    font-weight:700 !important;
+
+    line-height:1.35 !important;
+
+    white-space:normal !important;
+
+    overflow:hidden !important;
+}
+
+
+/* penulis */
+
+.news-info small{
+    display:block;
+    margin-top:8px;
+    font-size:11px;
+}
+
+
+/* tombol */
+
+.news-buttons{
+    display:flex !important;
+    flex-direction:row !important;
+    gap:5px !important;
+}
+
+
+.news-buttons .btn{
+    display:inline-flex !important;
+
+    width:auto !important;
+    height:26px !important;
+
+    padding:5px 8px !important;
+
+    font-size:10px !important;
+    line-height:1 !important;
+}
+
+
+/* matikan efek tabel lama */
+
+.admin-table{
+    display:block !important;
+}
+
+.admin-table tbody{
+    display:block !important;
+}
+
+.admin-table tr{
+    display:block !important;
+}
+
+
+.admin-table td{
+    display:block !important;
+}
+
+
+
+/* =========================
+   NEWS LIST CLEAN FINAL
+========================= */
+
+.news-list{
+    width:100%;
+}
+
+
+.news-item{
+    width:100%;
+    padding:15px 0;
+    border-bottom:1px solid #ddd;
+}
+
+
+/* kategori + status */
+
+.news-top{
+    display:flex;
+    justify-content:space-between;
+    font-size:12px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+
+/* foto + judul + tombol */
+
+.news-row{
+    display:grid;
+    grid-template-columns:90px minmax(0,1fr) auto;
+    align-items:center;
+    gap:12px;
+}
+
+
+.news-img{
+    width:90px;
+    height:60px;
+    object-fit:cover;
+    border-radius:5px;
+}
+
+
+.news-text{
+    min-width:0;
+}
+
+
+.news-text b{
+    display:block;
+    font-size:15px;
+    line-height:1.35;
+
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+}
+
+
+.news-text small{
+    display:block;
+    margin-top:8px;
+    font-size:11px;
+    color:#777;
+}
+
+
+.news-action{
+    display:flex;
+    gap:5px;
+}
+
+
+.news-action .btn{
+    padding:5px 9px;
+    font-size:10px;
+    height:auto;
+    width:auto;
+}
+
+
+
+/* ===== NEWS FINAL COMPACT ===== */
+
+.news-item{
+    padding:8px 0 !important;
+}
+
+
+.news-row{
+    grid-template-columns:85px minmax(0,1fr) auto !important;
+    gap:10px !important;
+}
+
+
+.news-img{
+    width:85px !important;
+    height:55px !important;
+}
+
+
+.news-text b{
+    display:block !important;
+    -webkit-line-clamp:unset !important;
+    overflow:visible !important;
+
+    font-size:14px !important;
+    line-height:1.25 !important;
+}
+
+
+.news-text small{
+    margin-top:4px !important;
+    font-size:10px !important;
+}
+
+
+.news-action{
+    gap:4px !important;
+}
+
+
+.news-action .btn{
+    padding:4px 7px !important;
+    font-size:9px !important;
+    border-radius:4px !important;
+}
+
+
+.news-top{
+    margin-bottom:6px !important;
+    font-size:11px !important;
+}
+
+
+
+/* REALTIME CLOCK */
+
+#clock{
+font-size:13px;
+font-weight:700;
+margin-left:20px;
+}
+
+
+.header nav{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+
+/* DASHBOARD DATE CLOCK */
+
+#clock{
+    margin:5px 0 0;
+    font-size:13px;
+    font-weight:600;
+    color:#777;
+}
+
+
+
+/* =========================
+   ADMIN MOBILE POLISH
+========================= */
+
+@media(max-width:768px){
+
+.header{
+    padding:12px 20px !important;
+}
+
+
+.brand-logo img{
+    width:90px !important;
+}
+
+
+.admin-wrap{
+    padding:20px 15px !important;
+    margin-top:20px !important;
+}
+
+
+.admin-head{
+    margin-bottom:20px !important;
+}
+
+
+.admin-head h1{
+    font-size:24px !important;
+    margin-bottom:5px !important;
+}
+
+
+.admin-head p{
+    margin:5px 0 15px !important;
+}
+
+
+.actions{
+    display:flex;
+    gap:8px;
+}
+
+
+.actions .btn{
+    padding:10px 15px !important;
+}
+
+
+.panel{
+    padding:15px !important;
+}
+
+
+.field textarea{
+    min-height:120px !important;
+}
+
+
+}
+
+
+/* PAGINATION */
+
+#pagination{
+
+display:flex;
+justify-content:center;
+gap:6px;
+margin-top:20px;
+flex-wrap:wrap;
+
+}
+
+
+#pagination .btn{
+
+padding:7px 12px;
+font-size:12px;
+
+}
+
+
+#pagination .active{
+
+background:#d97706;
+color:white;
+
+}
+
+
+#pagination button:disabled{
+
+opacity:.5;
+cursor:not-allowed;
+
+}
+
+
+
+/* ADMIN STAT */
+
+.admin-stats{
+
+display:flex;
+gap:15px;
+margin-top:15px;
+
+}
+
+
+.stat-box{
+
+background:#fff;
+border:1px solid #ddd;
+padding:15px;
+border-radius:8px;
+min-width:120px;
+
+}
+
+
+.stat-box b{
+
+display:block;
+font-size:24px;
+
+}
+
+
+.stat-box small{
+
+color:#777;
+
+}
+
+
+@media(max-width:768px){
+
+.admin-stats{
+
+flex-wrap:wrap;
+
+}
+
+
+.stat-box{
+
+flex:1;
+
+}
+
+}
+
+
+/* ADMIN SEARCH */
+
+.admin-search{
+
+margin:15px 0;
+
+}
+
+
+.admin-search input{
+
+width:100%;
+padding:10px;
+border:1px solid #ddd;
+border-radius:5px;
+font-size:14px;
+
+}
+
+
+/* =========================
+   NEWS STATUS UPLOAD CLEAN
+========================= */
+
+
+.news-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+
+
+.news-status-box{
+    text-align:right;
+}
+
+
+.news-status-box span{
+    font-size:12px;
+    font-weight:700;
+}
+
+
+.news-status-box small{
+    display:block;
+    margin-top:5px;
+    font-size:10px;
+    line-height:1.4;
+    color:#777;
+}
+
+
+
+/* REDAKSI BAWAH FOTO */
+
+.news-meta{
+    grid-column:1;
+    margin-top:-5px;
+}
+
+
+.news-meta small{
+    font-size:11px;
+    color:#777;
+}
+
+
+
+/* =========================
+   NEWS ACTION KEEP RIGHT BOTTOM
+========================= */
+
+
+.news-row{
+    position:relative;
+    padding-bottom:35px;
+}
+
+
+.news-action{
+    position:absolute;
+    right:0;
+    bottom:0;
+    display:flex;
+    gap:6px;
+}
+
+
+/* KEMBALIKAN UKURAN BUTTON */
+
+.news-action .btn{
+
+    padding:8px 12px !important;
+    font-size:12px !important;
+    height:auto !important;
+
+}
+
+
+/* META TETAP KIRI BAWAH */
+
+.news-meta{
+
+    position:absolute;
+    left:0;
+    bottom:0;
+
+}
+
+
+
+/* =========================
+   NEWS ACTION KEEP RIGHT BOTTOM
+========================= */
+
+
+.news-row{
+    position:relative;
+    padding-bottom:35px;
+}
+
+
+.news-action{
+    position:absolute;
+    right:0;
+    bottom:0;
+    display:flex;
+    gap:6px;
+}
+
+
+/* KEMBALIKAN UKURAN BUTTON */
+
+.news-action .btn{
+
+    padding:8px 12px !important;
+    font-size:12px !important;
+    height:auto !important;
+
+}
+
+
+/* META TETAP KIRI BAWAH */
+
+.news-meta{
+
+    position:absolute;
+    left:0;
+    bottom:0;
+
+}
+
+
+
+/* SMALL NEWS ACTION BUTTON */
+
+.news-action .btn{
+
+    padding:4px 7px !important;
+    font-size:9px !important;
+    border-radius:4px !important;
+
+}
+
+
+.news-action{
+
+    gap:4px !important;
+
+}
+
+
+
+/* =========================
+   NEWS TOP GAP FIX
+========================= */
+
+.news-top{
+    margin-bottom:5px !important;
+}
+
+
+.news-row{
+    margin-top:0 !important;
+    padding-top:0 !important;
+}
+
+
+.news-item{
+    padding-top:8px !important;
+}
+
+
+
+/* =========================
+   NEWS TOP COMPACT FINAL
+========================= */
+
+.news-top{
+    margin-bottom:0 !important;
+    padding-bottom:0 !important;
+    line-height:1.1 !important;
+}
+
+
+.news-status-box small{
+    margin-top:1px !important;
+    line-height:1.1 !important;
+}
+
+
+.news-row{
+    margin-top:-8px !important;
+}
+
+
+.news-item{
+    padding-top:5px !important;
+}
+
+
+
+/* =========================
+   NEWS TITLE WIDTH FIX
+========================= */
+
+.news-text{
+    max-width:calc(100% - 80px);
+    padding-right:5px;
+}
+
+
+.news-text b{
+
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+
+    line-height:1.25;
+
+}
+
+
+/* kasih ruang untuk tombol kanan */
+
+.news-row{
+    padding-right:80px !important;
+}
+
+
+.news-action{
+    width:auto;
+}
+
+
+
+/* =========================
+   NEWS TITLE 3 LINE FIX
+========================= */
+
+.news-row{
+    padding-right:0 !important;
+}
+
+
+.news-text{
+    max-width:none !important;
+    flex:1;
+    min-width:0;
+    padding-right:0 !important;
+}
+
+
+.news-text b{
+
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+
+    font-size:14px;
+    line-height:1.3;
+
+}
+
+
+/* tombol tetap kanan bawah */
+
+.news-action{
+    position:absolute;
+    right:0;
+    bottom:0;
+}
+
+
+
+/* =========================
+   NEWS GRID FINAL ALIGN
+========================= */
+
+
+.news-row{
+    display:grid !important;
+    grid-template-columns:80px minmax(0,1fr);
+    gap:10px;
+    position:relative;
+    padding-bottom:35px !important;
+}
+
+
+/* FOTO */
+
+.news-img{
+    width:80px;
+    height:55px;
+}
+
+
+/* JUDUL */
+
+.news-text{
+    min-width:0 !important;
+    width:100%;
+}
+
+
+.news-text b{
+
+    display:-webkit-box !important;
+    -webkit-line-clamp:3 !important;
+    -webkit-box-orient:vertical !important;
+    overflow:hidden !important;
+
+    line-height:1.25;
+
+}
+
+
+/* META */
+
+.news-meta{
+    grid-column:1 / 3;
+}
+
+
+/* TOMBOL */
+
+.news-action{
+
+    position:absolute !important;
+    right:0;
+    bottom:0;
+
+}
+
+
+
+/* =========================
+   NEWS HEADER SPACE FINAL
+========================= */
+
+
+.news-item{
+    overflow:hidden;
+}
+
+
+.news-top{
+    min-height:45px !important;
+    margin-bottom:8px !important;
+}
+
+
+.news-row{
+    display:grid !important;
+    grid-template-columns:80px 1fr !important;
+    gap:10px !important;
+    position:relative !important;
+    padding-bottom:35px !important;
+}
+
+
+.news-text{
+    width:auto !important;
+    max-width:100% !important;
+    overflow:hidden !important;
+}
+
+
+.news-text b{
+
+    display:-webkit-box !important;
+    -webkit-line-clamp:3 !important;
+    -webkit-box-orient:vertical !important;
+    overflow:hidden !important;
+
+}
+
+
+.news-action{
+
+    position:absolute !important;
+    right:0 !important;
+    bottom:0 !important;
+
+}
+
+
+.news-meta{
+
+    margin-top:5px !important;
+
+}
+
+
+
+/* NEWS TITLE MAX 4 LINES */
+
+.news-text b{
+
+    display:-webkit-box !important;
+    -webkit-line-clamp:4 !important;
+    -webkit-box-orient:vertical !important;
+    overflow:hidden !important;
+
+}
+
+
+/* DASHBOARD STAT */
+
+.admin-stats{
+
+display:flex;
+gap:10px;
+margin:15px 0;
+
+}
+
+
+.admin-stats div{
+
+background:#fff;
+border:1px solid #ddd;
+padding:12px;
+border-radius:8px;
+min-width:90px;
+
+}
+
+
+.admin-stats b{
+
+display:block;
+font-size:22px;
+
+}
+
+
+.admin-stats span{
+
+font-size:12px;
+color:#777;
+
+}
+
+
+@media(max-width:768px){
+
+.admin-stats{
+flex-wrap:wrap;
+}
+
+}
+
+
+/* NEWS PREVIEW */
+
+.preview-box{
+
+margin-top:20px;
+
+}
+
+
+.preview-news{
+
+border:1px solid #ddd;
+padding:15px;
+border-radius:8px;
+
+}
+
+
+.preview-news img{
+
+width:100%;
+max-height:250px;
+object-fit:cover;
+
+}
+
+
+.preview-news h2{
+
+font-size:20px;
+
+}
+
+
+
+/* HERO BADGE */
+
+.news-status-box span{
+
+display:block;
+
+}
+
+
+.hero-badge{
+
+font-size:10px;
+color:#f97316;
+
+}
+

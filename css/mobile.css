@@ -1,0 +1,179 @@
+
+/* =================================
+   MOBILE ONLY - MEDIA JAKTIM
+================================= */
+
+@media(max-width:720px){
+
+body{
+    overflow-x:hidden;
+}
+
+.header{
+    height:70px !important;
+    padding:0 15px !important;
+}
+
+.brand-logo{
+    width:76px !important;
+    height:54px !important;
+}
+
+.brand-logo img{
+    width:54px !important;
+    height:54px !important;
+}
+
+.header nav{
+    display:none !important;
+}
+
+.header-actions{
+    margin-left:auto;
+}
+
+.ticker{
+    margin:8px 15px 12px !important;
+}
+
+main{
+    padding:0 15px !important;
+}
+
+.hero-grid{
+    grid-template-columns:1fr !important;
+}
+
+.hero{
+    height:330px !important;
+}
+
+.overlay h1{
+    font-size:27px !important;
+}
+
+.side-news{
+    display:none !important;
+}
+
+.cards{
+    grid-template-columns:repeat(2,1fr) !important;
+}
+
+.category-grid{
+    grid-template-columns:1fr !important;
+}
+
+.lower{
+    grid-template-columns:1fr !important;
+}
+
+.video-grid{
+    grid-template-columns:repeat(2,1fr) !important;
+}
+
+footer{
+    grid-template-columns:1fr 1fr !important;
+    padding:30px 15px !important;
+}
+
+.copyright{
+    padding:10px 15px !important;
+}
+
+}
+
+
+/* ==========================
+   MOBILE POLISH FIX
+========================== */
+
+@media(max-width:720px){
+
+.brand-logo{
+    width:90px !important;
+    height:65px !important;
+}
+
+.brand-logo img{
+    width:70px !important;
+    height:70px !important;
+    object-fit:contain !important;
+}
+
+
+.ticker{
+    overflow:hidden !important;
+}
+
+.ticker span{
+    overflow:hidden !important;
+    text-overflow:ellipsis !important;
+}
+
+
+.hero{
+    height:310px !important;
+}
+
+.overlay{
+    padding:20px 18px !important;
+}
+
+.overlay h1{
+    font-size:23px !important;
+    line-height:1.15 !important;
+    margin-bottom:6px !important;
+}
+
+
+.card img{
+    height:160px !important;
+}
+
+}
+
+
+/* ==========================
+ MOBILE HERO TITLE FIX
+========================== */
+
+@media(max-width:720px){
+
+.overlay h1{
+    display:-webkit-box;
+    -webkit-line-clamp:4;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    font-size:24px !important;
+    line-height:1.15 !important;
+}
+
+.overlay{
+    justify-content:flex-end !important;
+}
+
+}
+
+
+@media(max-width:720px){
+
+.header{
+    height:60px !important;
+}
+
+.ticker{
+    margin-top:5px !important;
+}
+
+}
+
+
+@media(max-width:720px){
+
+.card img{
+    height:150px !important;
+}
+
+}
+

@@ -1,0 +1,92 @@
+
+/* =================================
+   MOBILE DRAWER FIX CLEAN
+================================= */
+
+
+@media(max-width:720px){
+
+
+.drawer-menu{
+
+    position:fixed !important;
+
+    top:0 !important;
+    right:0 !important;
+
+    width:260px !important;
+    height:100vh !important;
+
+    background:#fff !important;
+
+    z-index:99999 !important;
+
+    padding:70px 20px 20px !important;
+
+}
+
+
+
+/* DEFAULT HIDDEN */
+
+.drawer-overlay{
+
+    position:fixed !important;
+
+    inset:0 !important;
+
+    background:rgba(0,0,0,.4) !important;
+
+    z-index:99998 !important;
+
+    display:none !important;
+
+}
+
+
+
+/* SAAT AKTIF */
+
+.drawer-open .drawer-overlay,
+body.menu-open .drawer-overlay,
+body.drawer-open .drawer-overlay{
+
+    display:block !important;
+
+}
+
+
+
+.drawer-menu a{
+
+    display:block !important;
+
+    padding:14px 0 !important;
+
+    color:#111 !important;
+
+    text-decoration:none !important;
+
+}
+
+
+}
+
+
+
+/* =================================
+   DRAWER OPEN HIDE SEARCH
+================================= */
+
+@media(max-width:720px){
+
+body.menu-open .search-box,
+body.drawer-open .search-box{
+
+    display:none !important;
+
+}
+
+
+}
+

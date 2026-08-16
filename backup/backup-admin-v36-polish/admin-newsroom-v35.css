@@ -1,0 +1,351 @@
+/* =====================================
+   MEDIA JAKTIM CMS NEWSROOM V3.5
+   Premium Dark News Dashboard
+===================================== */
+
+
+/* GLOBAL */
+
+body{
+    background:#0f1115;
+}
+
+
+/* MAIN WRAPPER */
+
+.admin-wrap{
+    max-width:1400px;
+    margin:30px auto;
+    padding:24px;
+    background:#0f1115;
+}
+
+
+
+/* HEADER NEWSROOM */
+
+.admin-head{
+    display:block;
+    background:
+    linear-gradient(
+        135deg,
+        #ff8a00,
+        #e85d04
+    );
+
+    border-radius:22px;
+
+    padding:30px;
+
+    box-shadow:
+    0 20px 40px rgba(0,0,0,.25);
+}
+
+
+.admin-head h1{
+
+    color:#fff;
+
+    font-size:34px;
+
+    margin:0 0 8px 0;
+
+    letter-spacing:-1px;
+}
+
+
+.admin-head p{
+
+    color:#fff;
+
+    margin:6px 0;
+
+    opacity:.9;
+
+}
+
+
+
+/* DASHBOARD TOOLS */
+
+.dashboard-tools{
+
+    background:#171a21;
+
+    border:
+    1px solid #303642;
+
+    border-radius:20px;
+
+    padding:20px;
+
+    margin-top:20px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+/* STAT CARD */
+
+.admin-stats{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:18px;
+
+    margin-top:0;
+
+}
+
+
+.admin-stats > div{
+
+    background:#20242d;
+
+    border:
+    1px solid #303642;
+
+    border-radius:18px;
+
+    padding:22px;
+
+    transition:.25s;
+
+}
+
+
+.admin-stats > div:hover{
+
+    transform:
+    translateY(-4px);
+
+    border-color:#ff8a00;
+
+}
+
+
+.admin-stats b{
+
+    display:block;
+
+    color:#ff8a00;
+
+    font-size:38px;
+
+    line-height:1.2;
+
+}
+
+
+.admin-stats span,
+.admin-stats small{
+
+    color:#9ca3af;
+
+    font-size:14px;
+
+}
+
+
+
+/* ACTION BUTTON AREA */
+
+.actions{
+
+    margin-top:18px;
+
+}
+
+
+
+/* PANELS */
+
+.panel{
+
+    background:#171a21;
+
+    border:
+    1px solid #303642;
+
+    border-radius:20px;
+
+    padding:22px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.15);
+
+}
+
+
+.panel h2{
+
+    color:#ff8a00;
+
+}
+
+
+
+/* INPUT FORM */
+
+.field label{
+
+    color:#d1d5db;
+
+    font-size:14px;
+
+    font-weight:600;
+
+}
+
+
+.field input,
+.field textarea,
+.field select{
+
+    width:100%;
+
+    background:#20242d;
+
+    color:#fff;
+
+    border:
+    1px solid #303642;
+
+    border-radius:12px;
+
+    padding:13px;
+
+}
+
+
+.field input:focus,
+.field textarea:focus,
+.field select:focus{
+
+    outline:none;
+
+    border-color:#ff8a00;
+
+}
+
+
+
+/* BUTTON */
+
+.btn{
+
+    border-radius:12px;
+
+    transition:.2s;
+
+}
+
+
+.btn:hover{
+
+    transform:
+    translateY(-2px);
+
+}
+
+
+
+/* NEWS LIST */
+
+.news-item{
+
+    background:#20242d;
+
+    border:
+    1px solid #303642;
+
+    border-radius:16px;
+
+    padding:16px;
+
+    margin-bottom:14px;
+
+}
+
+
+.news-item:hover{
+
+    border-color:#ff8a00;
+
+}
+
+
+.news-img{
+
+    border-radius:12px;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+
+.admin-wrap{
+
+    padding:14px;
+
+}
+
+
+.admin-head{
+
+    padding:22px;
+
+}
+
+
+.admin-head h1{
+
+    font-size:25px;
+
+}
+
+
+.admin-stats{
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+}
+
+
+.dashboard-tools{
+
+    padding:15px;
+
+}
+
+
+}
+
+
+@media(max-width:480px){
+
+
+.admin-stats{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.btn{
+
+    width:100%;
+
+}
+
+}

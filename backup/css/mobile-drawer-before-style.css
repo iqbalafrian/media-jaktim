@@ -1,0 +1,99 @@
+/* =====================================
+   MOBILE DRAWER CLEAN MODULE v1
+===================================== */
+
+@media(max-width:720px){
+
+
+/* DRAWER */
+
+.drawer-menu{
+
+    position:fixed !important;
+
+    top:0 !important;
+    right:0 !important;
+
+    width:280px !important;
+    height:100vh !important;
+
+    background:#fff !important;
+
+    z-index:100001 !important;
+
+    padding:70px 20px 20px !important;
+
+    transform:translateX(100%) !important;
+
+    transition:.3s ease !important;
+
+}
+
+
+
+/* OPEN */
+
+.drawer-menu.active{
+
+    transform:translateX(0) !important;
+
+}
+
+
+
+/* OVERLAY */
+
+.drawer-overlay{
+
+    position:fixed !important;
+
+    inset:0 !important;
+
+    background:rgba(0,0,0,.45) !important;
+
+    z-index:100000 !important;
+
+    display:none !important;
+
+}
+
+
+
+/* OPEN OVERLAY */
+
+.drawer-overlay.active{
+
+    display:block !important;
+
+}
+
+
+
+/* MENU LINK */
+
+.drawer-menu a{
+
+    display:block !important;
+
+    padding:14px 0 !important;
+
+    color:#111 !important;
+
+    text-decoration:none !important;
+
+}
+
+
+
+/* CLICK FIX */
+
+.drawer-menu,
+.drawer-overlay{
+
+    pointer-events:auto !important;
+
+}
+
+
+}
+

@@ -1,0 +1,155 @@
+﻿<!doctype html>
+<html lang="id">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Media Jaktim - Artikel</title>
+
+<link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+
+
+<header class="header">
+
+<a class="brand-logo" href="index.html">
+
+<img src="assets/logo/media-jaktim-logo.png">
+
+</a>
+
+<a href="index.html">
+KEMBALI
+</a>
+
+</header>
+
+
+
+<main style="max-width:900px;margin:40px auto;padding:20px">
+
+
+<article id="article-detail">
+
+Memuat artikel...
+
+</article>
+
+
+</main>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script src="supabase.js"></script>
+
+
+<script>
+
+
+async function loadArticle(){
+
+
+const params=new URLSearchParams(
+window.location.search
+);
+
+
+const id=params.get("id");
+
+
+const {data,error}=await supabaseClient
+
+.from("articles")
+
+.select("*")
+
+.eq("id",id)
+
+.single();
+
+
+
+if(error){
+
+document.getElementById("article-detail").innerHTML=
+
+"Artikel tidak ditemukan";
+
+return;
+
+}
+
+
+
+document.title=data.title;
+
+
+
+document.getElementById("article-detail").innerHTML=
+
+`
+
+<img 
+src="${data.image || 'assets/logo/media-jaktim-logo.png'}"
+style="width:100%;border-radius:12px"
+>
+
+
+<h1>${data.title}</h1>
+
+
+<p>
+
+${data.category || ""}
+
+•
+
+${data.author || "Redaksi Media Jaktim"}
+
+</p>
+
+
+<hr>
+
+
+<div style="font-size:18px;line-height:1.8">
+
+${data.content}
+
+</div>
+
+
+`;
+
+}
+
+
+
+
+
+</script>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+<script src="article-app.js"></script>
+</body>
+
+
+</html>
+
+
+
+
+
+
+

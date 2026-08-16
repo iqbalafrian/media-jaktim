@@ -1,0 +1,1935 @@
+/* ======================================
+ MEDIA JAKTIM MOBILE LOCK MODE
+ FINAL OVERRIDE
+====================================== */
+
+
+@media(max-width:720px){
+
+
+*{
+ box-sizing:border-box !important;
+}
+
+
+body{
+ margin:0 !important;
+ overflow-x:hidden !important;
+}
+
+
+/* HEADER */
+
+.header{
+ height:70px !important;
+ padding:0 15px !important;
+ display:flex !important;
+ align-items:center !important;
+}
+
+.header nav,
+.header .menu,
+.header .right-menu{
+ display:none !important;
+}
+
+
+/* TICKER */
+
+.ticker{
+ display:flex !important;
+ width:auto !important;
+ margin:10px 15px 15px !important;
+ height:42px !important;
+ overflow:hidden !important;
+}
+
+
+.ticker b{
+ flex:0 0 auto !important;
+ padding:0 12px !important;
+}
+
+
+.ticker span{
+ flex:1 !important;
+ overflow:hidden !important;
+ white-space:nowrap !important;
+}
+
+
+.ticker button{
+ display:none !important;
+}
+
+
+
+/* MAIN */
+
+main{
+ width:100% !important;
+ padding:0 15px !important;
+}
+
+
+
+/* HERO */
+
+.hero-grid{
+ display:block !important;
+}
+
+
+.hero{
+ height:330px !important;
+ width:100% !important;
+ position:relative !important;
+ border-radius:10px !important;
+ overflow:hidden !important;
+}
+
+
+.hero>img{
+ display:block !important;
+ width:100% !important;
+ height:100% !important;
+ object-fit:cover !important;
+}
+
+
+.overlay{
+ position:absolute !important;
+ inset:0 !important;
+ display:flex !important;
+ justify-content:flex-end !important;
+ padding:20px !important;
+ background:linear-gradient(
+ transparent 35%,
+ rgba(0,0,0,.85)
+ ) !important;
+}
+
+
+.overlay h1{
+ color:white !important;
+ font-size:24px !important;
+ line-height:1.15 !important;
+ margin:10px 0 !important;
+}
+
+
+.overlay p,
+.overlay small{
+ color:white !important;
+}
+
+
+/* SIDE */
+
+.side-news{
+ display:none !important;
+}
+
+
+/* SECTION */
+
+.section{
+ margin-top:40px !important;
+}
+
+
+.section-title{
+ display:flex !important;
+ justify-content:space-between !important;
+ align-items:center !important;
+ margin-bottom:15px !important;
+}
+
+
+.section-title h2{
+ font-size:18px !important;
+}
+
+
+
+/* CARDS */
+
+.cards{
+ display:grid !important;
+ grid-template-columns:repeat(2,1fr) !important;
+ gap:12px !important;
+}
+
+
+.card{
+ width:100% !important;
+}
+
+
+.card img{
+ width:100% !important;
+ height:120px !important;
+ object-fit:cover !important;
+}
+
+
+.card h3{
+ font-size:14px !important;
+ margin-top:8px !important;
+}
+
+
+
+/* CATEGORY */
+
+.category-grid{
+ display:block !important;
+}
+
+
+/* LOWER */
+
+.lower{
+ display:block !important;
+}
+
+
+.video-grid{
+ display:grid !important;
+ grid-template-columns:repeat(2,1fr) !important;
+}
+
+
+footer{
+ display:block !important;
+}
+
+
+
+}
+
+
+
+@media(max-width:430px){
+
+.cards{
+ grid-template-columns:1fr !important;
+}
+
+
+.hero{
+ height:300px !important;
+}
+
+
+.overlay h1{
+ font-size:22px !important;
+}
+
+
+}
+
+
+/* HEADER CLEAN FINAL */
+
+@media(max-width:720px){
+
+.header{
+    display:flex !important;
+    justify-content:flex-start !important;
+}
+
+
+.header > div:not(.brand-logo):not(.header-actions):not(.drawer-overlay):not(.drawer-menu){display:none !important;}
+
+
+.header .brand{
+    margin:0 !important;
+}
+
+
+/* SEMUA TEKS MENU DESKTOP */
+.header a,
+.header ul,
+.header nav{
+    display:none !important;
+}
+
+
+/* HERO TEXT */
+.overlay{
+    justify-content:flex-end !important;
+    padding:18px !important;
+}
+
+
+.overlay h1{
+    font-size:23px !important;
+    font-weight:800 !important;
+}
+
+
+/* CARD BERITA */
+.cards{
+    display:grid !important;
+    grid-template-columns:repeat(2,1fr) !important;
+}
+
+
+.card label{
+    margin-top:-20px !important;
+}
+
+
+/* BERITA TERBARU JARAK */
+.section{
+    margin-top:45px !important;
+}
+
+
+}
+
+@media(max-width:430px){
+
+.cards{
+    grid-template-columns:1fr !important;
+}
+
+}
+
+
+/* ==============================
+   HEADER LOGO RESTORE
+============================== */
+
+@media(max-width:720px){
+
+.header{
+    display:flex !important;
+    height:70px !important;
+    padding:0 15px !important;
+}
+
+
+.header .brand-logo{
+    display:flex !important;
+    width:86px !important;
+    height:62px !important;
+}
+
+
+.header .brand-logo img{
+    width:64px !important;
+    height:64px !important;
+    object-fit:contain !important;
+}
+
+
+/* hide menu desktop saja */
+.header nav{
+    display:none !important;
+}
+
+
+.header a:not(.brand-logo){
+    display:none !important;
+}
+
+
+}
+
+
+/* ================================
+   LATEST NEWS GRID FINAL
+================================ */
+
+@media(max-width:720px){
+
+#latest-news.cards{
+
+    display:grid !important;
+    grid-template-columns:repeat(2, minmax(0,1fr)) !important;
+    gap:12px !important;
+    width:100% !important;
+
+}
+
+
+#latest-news .card{
+
+    display:block !important;
+    width:100% !important;
+
+}
+
+
+#latest-news .card img{
+
+    width:100% !important;
+    height:120px !important;
+    object-fit:cover !important;
+
+}
+
+
+#latest-news .card h3{
+
+    font-size:14px !important;
+    line-height:1.3 !important;
+
+}
+
+
+}
+
+
+@media(max-width:430px){
+
+#latest-news.cards{
+
+    grid-template-columns:1fr !important;
+
+}
+
+}
+
+
+
+/* =================================
+   MOBILE FINAL CLEAN FIX
+================================= */
+
+@media(max-width:720px){
+
+
+/* HIDE DESKTOP MENU */
+
+.header nav,.header-menu,.header-right,.header > div:not(.brand-logo):not(.header-actions):not(.drawer-overlay):not(.drawer-menu){
+
+display:none !important;
+
+}
+
+
+.header{
+
+height:70px !important;
+padding:15px !important;
+display:flex !important;
+align-items:center !important;
+
+}
+
+
+.brand-logo img{
+
+width:75px !important;
+
+}
+
+
+
+/* TICKER */
+
+.ticker{
+
+margin:10px 15px !important;
+height:38px !important;
+overflow:hidden !important;
+
+}
+
+
+.ticker b{
+
+font-size:12px !important;
+
+}
+
+
+
+/* HERO */
+
+.hero{
+
+height:260px !important;
+border-radius:14px !important;
+
+}
+
+
+.hero::after{
+
+content:"";
+position:absolute;
+inset:45% 0 0;
+
+background:linear-gradient(
+transparent,
+rgba(0,0,0,.85)
+);
+
+}
+
+
+.hero h1,
+.hero label,
+.hero .badge{
+
+z-index:2 !important;
+
+}
+
+}
+
+
+/* ==================================
+   FORCE LATEST NEWS GRID OVERRIDE
+================================== */
+
+
+@media(max-width:720px){
+
+
+section .cards#latest-news,
+#latest-news.cards,
+.cards{
+
+display:grid !important;
+grid-template-columns:repeat(2, 1fr) !important;
+grid-auto-flow:row !important;
+gap:12px !important;
+
+}
+
+
+
+.cards .card{
+
+display:flex !important;
+flex-direction:column !important;
+width:100% !important;
+float:none !important;
+
+}
+
+
+
+.cards .card img{
+
+width:100% !important;
+height:110px !important;
+object-fit:cover !important;
+
+}
+
+
+.cards .card h3{
+
+font-size:13px !important;
+line-height:1.3 !important;
+
+}
+
+
+.cards .card label{
+
+align-self:flex-start !important;
+
+}
+
+
+}
+
+
+
+@media(max-width:430px){
+
+
+section .cards#latest-news,
+#latest-news.cards,
+.cards{
+
+grid-template-columns:1fr !important;
+
+}
+
+
+}
+
+
+
+/* FINAL FIX IPHONE XR LATEST NEWS */
+
+@media(max-width:430px){
+
+#latest-news.cards,
+.section .cards#latest-news{
+
+grid-template-columns:repeat(2,1fr) !important;
+
+}
+
+
+#latest-news .card{
+
+width:100% !important;
+
+}
+
+
+#latest-news .card img{
+
+height:95px !important;
+
+}
+
+
+#latest-news .card h3{
+
+font-size:12px !important;
+line-height:1.25 !important;
+
+}
+
+
+}
+
+
+
+@media(max-width:430px){
+
+#latest-news{
+row-gap:18px !important;
+}
+
+#latest-news .card h3{
+margin-top:8px !important;
+margin-bottom:5px !important;
+}
+
+}
+
+
+/* =====================================
+   MEDIA JAKTIM MOBILE FINAL POLISH
+===================================== */
+
+@media(max-width:430px){
+
+
+/* HERO MOBILE CLEAN */
+.hero{
+height:300px !important;
+border-radius:8px !important;
+}
+
+
+.hero .overlay{
+padding:20px !important;
+background:linear-gradient(
+transparent 35%,
+rgba(0,0,0,.88)
+) !important;
+}
+
+
+.hero .overlay h1{
+font-size:22px !important;
+line-height:1.18 !important;
+max-width:90% !important;
+margin-bottom:8px !important;
+}
+
+
+/* TICKER */
+.ticker{
+height:36px !important;
+border-radius:0 !important;
+}
+
+
+.ticker b{
+font-size:10px !important;
+padding:0 12px !important;
+}
+
+
+.ticker span{
+font-size:12px !important;
+}
+
+
+/* LATEST NEWS */
+#latest-news{
+row-gap:18px !important;
+column-gap:12px !important;
+}
+
+
+#latest-news .card img{
+height:110px !important;
+border-radius:6px !important;
+}
+
+
+#latest-news .card h3{
+font-size:12px !important;
+line-height:1.3 !important;
+margin:8px 0 5px !important;
+}
+
+
+#latest-news .card label{
+font-size:9px !important;
+padding:4px 7px !important;
+border-radius:3px;
+}
+
+
+/* SECTION TITLE */
+.section-title{
+margin-bottom:14px !important;
+}
+
+
+.section-title h2{
+font-size:15px !important;
+}
+
+
+.section-title a{
+font-size:10px !important;
+}
+
+
+}
+
+
+/* ==================================
+   MEDIA JAKTIM MOBILE FINAL POLISH
+================================== */
+
+@media(max-width:720px){
+
+body{
+    background:#fff;
+}
+
+
+/* HEADER */
+.header{
+    height:70px;
+    padding:0 15px;
+}
+
+
+.brand-logo img{
+    width:75px;
+}
+
+
+/* HERO */
+.hero{
+    height:270px;
+    border-radius:10px;
+}
+
+
+.overlay{
+    padding:20px;
+}
+
+
+.overlay h1{
+    font-size:22px;
+    line-height:1.15;
+}
+
+
+/* TICKER */
+.ticker{
+    height:36px;
+    border-radius:0;
+}
+
+
+/* SECTION */
+.section{
+    margin-top:28px;
+}
+
+
+.section-title h2{
+    font-size:16px;
+}
+
+
+/* CARD */
+#latest-news.cards{
+    gap:12px;
+}
+
+
+#latest-news .card{
+    border-radius:8px;
+    overflow:hidden;
+}
+
+
+#latest-news .card img{
+    height:105px;
+}
+
+
+#latest-news .card h3{
+    font-size:13px;
+    line-height:1.3;
+}
+
+
+#latest-news .card label{
+    margin-top:8px;
+    position:static;
+}
+
+
+}
+
+
+/* HP KECIL */
+
+@media(max-width:430px){
+
+.hero{
+    height:250px;
+}
+
+
+.overlay h1{
+    font-size:20px;
+}
+
+
+}
+
+
+@media(max-width:720px){
+
+.brand-logo img{
+    width:90px;
+}
+
+}
+
+
+@media(max-width:720px){
+
+.overlay h1{
+    font-size:20px;
+    line-height:1.18;
+}
+
+}
+
+
+/* ===============================
+   MEDIA JAKTIM FINAL MOBILE HERO
+================================ */
+
+@media(max-width:720px){
+
+.hero{
+    height:320px !important;
+    border-radius:10px !important;
+}
+
+.hero>img{
+    width:100% !important;
+    height:100% !important;
+    object-fit:cover !important;
+}
+
+.hero .overlay{
+    padding:20px !important;
+    justify-content:flex-end !important;
+    background:linear-gradient(
+        transparent 35%,
+        rgba(0,0,0,.85)
+    ) !important;
+}
+
+.hero .hero-meta{
+    position:static !important;
+    margin-bottom:8px !important;
+    display:flex !important;
+    align-items:center !important;
+    gap:8px !important;
+}
+
+.hero .hero-meta label{
+    font-size:10px !important;
+    padding:4px 8px !important;
+}
+
+.hero .hero-meta small{
+    font-size:10px !important;
+    color:#ddd !important;
+}
+
+.hero .overlay h1{
+    font-size:24px !important;
+    line-height:1.2 !important;
+    margin:0 !important;
+    max-width:95% !important;
+}
+
+}
+
+
+@media(max-width:430px){
+
+.hero{
+    height:300px !important;
+}
+
+.hero .overlay h1{
+    font-size:21px !important;
+}
+
+}
+
+
+/* FINAL HERO META POSITION */
+
+@media(max-width:720px){
+
+.hero .hero-mobile-safe{
+    position:static !important;
+    margin-bottom:8px !important;
+    display:flex !important;
+    align-items:center !important;
+    gap:8px !important;
+}
+
+.hero .hero-mobile-safe label{
+    background:#f47718 !important;
+    color:white !important;
+}
+
+.hero .hero-mobile-safe small{
+    color:#ddd !important;
+}
+
+}
+
+
+/* HERO META MICRO ADJUST */
+
+@media(max-width:720px){
+
+.hero .hero-mobile-safe{
+    bottom:108px !important;
+}
+
+}
+
+
+@media(max-width:720px){
+
+.hero .overlay h1{
+    font-size:21px !important;
+    line-height:1.22 !important;
+}
+
+}
+
+
+/* HERO SPACING FINAL */
+
+@media(max-width:720px){
+
+.hero .hero-mobile-safe{
+    bottom:115px !important;
+}
+
+.hero .overlay h1{
+    bottom:25px !important;
+}
+
+}
+
+
+@media(max-width:720px){
+
+#latest-news .card h3{
+    font-size:13px !important;
+    font-weight:700 !important;
+    line-height:1.35 !important;
+}
+
+}
+
+
+@media(max-width:720px){
+
+.brand-logo img{
+    width:85px !important;
+}
+
+}
+
+
+/* ==================================
+   MOBILE HEADER PREMIUM FINAL
+================================== */
+
+@media(max-width:720px){
+
+.header{
+
+    height:64px !important;
+    padding:0 15px !important;
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+
+    background:#fff !important;
+
+}
+
+
+.brand-logo{
+
+    display:flex !important;
+    align-items:center !important;
+
+}
+
+
+.brand-logo img{
+
+    width:82px !important;
+    height:auto !important;
+
+}
+
+
+/* HEADER ACTION AREA */
+
+.header-actions{
+
+    margin-left:auto !important;
+
+    display:flex !important;
+    align-items:center !important;
+    gap:12px !important;
+
+}
+
+
+.header-actions .search{
+
+    font-size:22px !important;
+    width:32px !important;
+    height:32px !important;
+
+}
+
+
+.header-actions .hamburger{
+
+    width:32px !important;
+    height:32px !important;
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    font-size:22px !important;
+
+}
+
+
+
+/* HIDE DESKTOP NAV */
+
+.header nav{
+
+    display:none !important;
+
+}
+
+
+/* DRAWER */
+
+.drawer-menu{
+
+    top:64px !important;
+
+}
+
+
+}
+
+
+
+/* =================================
+   MOBILE HEADER ISOLATED v1
+   ONLY MOBILE
+================================= */
+
+@media(max-width:720px){
+
+
+/* HEADER RESET */
+
+.header{
+
+    height:64px !important;
+
+    display:flex !important;
+    flex-direction:row !important;
+    align-items:center !important;
+
+    justify-content:space-between !important;
+
+    padding:0 15px !important;
+
+    position:sticky !important;
+    top:0;
+
+    background:#fff !important;
+
+    z-index:999 !important;
+
+}
+
+
+/* LOGO */
+
+.brand-logo{
+
+    flex:none !important;
+
+    width:auto !important;
+
+}
+
+
+.brand-logo img{
+
+    width:78px !important;
+    height:78px !important;
+
+    object-fit:contain !important;
+
+}
+
+
+
+/* MATIKAN MENU DESKTOP */
+
+.main-menu{
+
+    display:none !important;
+
+}
+
+
+
+/* ACTION MOBILE */
+
+.header-actions{
+
+    display:flex !important;
+
+    margin-left:auto !important;
+
+    align-items:center !important;
+
+    gap:10px !important;
+
+}
+
+
+/* SEARCH */
+
+.header-actions .search{
+
+    display:flex !important;
+
+    align-items:center !important;
+
+    justify-content:center !important;
+
+    width:36px !important;
+
+    height:36px !important;
+
+    border:0 !important;
+
+    background:none !important;
+
+    font-size:22px !important;
+
+}
+
+
+
+/* HAMBURGER */
+
+.header-actions .hamburger{
+
+    display:flex !important;
+
+    align-items:center !important;
+
+    justify-content:center !important;
+
+    width:36px !important;
+
+    height:36px !important;
+
+    border:0 !important;
+
+    background:none !important;
+
+    font-size:22px !important;
+
+}
+
+
+
+/* DRAWER */
+
+.drawer-menu{
+
+    top:64px !important;
+
+    z-index:1000 !important;
+
+}
+
+
+.drawer-overlay{
+
+    z-index:999 !important;
+
+}
+
+
+}
+
+
+/* FORCE HEADER ACTION FINAL */
+
+@media(max-width:720px){
+
+.header-actions{
+
+display:flex !important;
+visibility:visible !important;
+opacity:1 !important;
+
+width:auto !important;
+height:auto !important;
+
+position:relative !important;
+
+}
+
+
+.header-actions .search,
+.header-actions .hamburger{
+
+display:flex !important;
+visibility:visible !important;
+opacity:1 !important;
+
+color:#111 !important;
+
+}
+
+
+}
+
+
+
+
+
+/* =================================
+   MOBILE HEADER FINAL CLEAN
+================================= */
+
+@media(max-width:720px){
+
+.header{
+    height:60px !important;
+    padding:0 15px !important;
+}
+
+
+.brand-logo img{
+    width:72px !important;
+    height:auto !important;
+}
+
+
+.header-actions{
+    gap:8px !important;
+}
+
+
+.header-actions .search,
+.header-actions .hamburger{
+
+    width:34px !important;
+    height:34px !important;
+
+    font-size:20px !important;
+
+}
+
+
+/* HIDE DRAWER TITLE WHEN CLOSED */
+
+.drawer-title{
+    display:block !important;
+}
+
+
+}
+
+
+/* =================================
+   MOBILE SEARCH ICON FLAT FIX
+================================= */
+
+@media(max-width:720px){
+
+.header-actions .search{
+
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+
+    width:36px !important;
+    height:36px !important;
+
+    font-size:0 !important;
+
+    position:relative !important;
+
+}
+
+
+.header-actions .search::before{
+
+    content:"" !important;
+
+    width:14px !important;
+    height:14px !important;
+
+    border:2px solid #111 !important;
+
+    border-radius:50% !important;
+
+    position:absolute !important;
+
+    top:8px !important;
+    left:8px !important;
+
+}
+
+
+.header-actions .search::after{
+
+    content:"" !important;
+
+    width:8px !important;
+    height:2px !important;
+
+    background:#111 !important;
+
+    position:absolute !important;
+
+    transform:rotate(45deg) !important;
+
+    top:23px !important;
+    left:21px !important;
+
+}
+
+}
+
+
+/* =================================
+   MOBILE HEADER FINAL POLISH
+================================= */
+
+@media(max-width:720px){
+
+.header{
+    height:64px !important;
+    padding:0 15px !important;
+}
+
+
+.brand-logo img{
+    width:82px !important;
+    height:auto !important;
+}
+
+
+.header-actions{
+    gap:14px !important;
+}
+
+
+.header-actions .search,
+.header-actions .hamburger{
+
+    width:34px !important;
+    height:34px !important;
+
+}
+
+
+.header-actions .hamburger{
+    font-size:20px !important;
+}
+
+
+}
+
+
+/* =================================
+   MOBILE HEADER POLISH FINAL
+================================= */
+
+@media(max-width:720px){
+
+.header{
+
+    height:66px !important;
+
+    display:flex !important;
+    align-items:center !important;
+
+    padding:0 14px !important;
+
+    gap:10px !important;
+
+}
+
+
+/* LOGO */
+
+.brand-logo{
+
+    display:flex !important;
+    align-items:center !important;
+
+    flex-shrink:0 !important;
+
+}
+
+
+.brand-logo img{
+
+    width:82px !important;
+    height:auto !important;
+
+}
+
+
+
+/* ACTION */
+
+.header-actions{
+
+    margin-left:auto !important;
+
+    display:flex !important;
+
+    align-items:center !important;
+
+    gap:12px !important;
+
+}
+
+
+
+/* SEARCH */
+
+.header-actions .search{
+
+    width:34px !important;
+    height:34px !important;
+
+}
+
+
+
+/* HAMBURGER */
+
+.header-actions .hamburger{
+
+    width:34px !important;
+    height:34px !important;
+
+    font-size:20px !important;
+
+}
+
+
+
+/* TEXT MENU */
+
+.header-actions + .main-menu{
+
+    display:none !important;
+
+}
+
+
+}
+
+
+/* REMOVE MOBILE MENU TEXT */
+
+@media(max-width:720px){
+
+.header-actions .hamburger::after{
+    content:"" !important;
+    display:none !important;
+}
+
+}
+
+
+/* =================================
+   HIDE DRAWER TITLE MOBILE HEADER
+================================= */
+
+@media(max-width:720px){
+
+.drawer-title{
+    display:none !important;
+}
+
+}
+
+
+/* =================================
+   MOBILE HEADER SPACING FINAL
+================================= */
+
+@media(max-width:720px){
+
+.header{
+    padding:0 18px !important;
+}
+
+
+.brand-logo img{
+    width:78px !important;
+}
+
+
+.header-actions{
+    gap:8px !important;
+}
+
+
+.ticker{
+    margin-top:10px !important;
+}
+
+
+.hero{
+    margin-top:12px !important;
+}
+
+}
+
+
+/* =================================
+   MOBILE HERO FINAL POLISH
+================================= */
+
+@media(max-width:720px){
+
+.hero{
+
+    height:285px !important;
+
+    border-radius:10px !important;
+
+}
+
+
+/* gambar */
+
+.hero>img{
+
+    height:100% !important;
+
+    object-fit:cover !important;
+
+}
+
+
+
+/* overlay */
+
+.hero .overlay{
+
+    padding:16px !important;
+
+    justify-content:flex-end !important;
+
+}
+
+
+
+/* meta */
+
+.hero .hero-meta{
+
+    bottom:72px !important;
+
+    left:16px !important;
+
+}
+
+
+
+/* judul */
+
+.hero .overlay h1{
+
+    font-size:21px !important;
+
+    line-height:1.18 !important;
+
+    margin-bottom:0 !important;
+
+    max-width:95% !important;
+
+}
+
+
+}
+
+
+
+/* =================================
+   HERO META + TITLE SEPARATION FIX
+================================= */
+
+@media(max-width:720px){
+
+.hero .overlay{
+
+    padding:18px !important;
+
+    display:flex !important;
+
+    flex-direction:column !important;
+
+    justify-content:flex-end !important;
+
+}
+
+
+.hero .hero-meta{
+
+    position:static !important;
+
+    margin-bottom:10px !important;
+
+    order:1 !important;
+
+}
+
+
+.hero .overlay h1{
+
+    order:2 !important;
+
+    margin:0 !important;
+
+    font-size:21px !important;
+
+    line-height:1.2 !important;
+
+}
+
+
+.hero .hero-meta label{
+
+    display:inline-block !important;
+
+}
+
+
+.hero .hero-meta small{
+
+    margin-left:8px !important;
+
+}
+
+
+}
+
+
+HERO META FLOW LAYOUT FIX
+================================= */
+
+@media(max-width:720px){
+
+.hero .overlay{
+
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:flex-end !important;
+
+    padding:18px !important;
+
+}
+
+
+/* META DI ATAS JUDUL */
+
+.hero .hero-meta{
+
+    position:static !important;
+
+    order:1 !important;
+
+    margin-bottom:8px !important;
+
+    width:max-content !important;
+
+}
+
+
+/* JUDUL */
+
+.hero .overlay h1{
+
+    position:static !important;
+
+    order:2 !important;
+
+    margin:0 !important;
+
+    max-width:100% !important;
+
+    font-size:21px !important;
+
+    line-height:1.18 !important;
+
+}
+
+
+}
+
+
+/* =========================================
+   MOBILE HERO CLEAN FINAL OVERRIDE
+   FLOW META ABOVE TITLE
+========================================= */
+
+@media(max-width:720px){
+
+.hero{
+    position:relative !important;
+    height:290px !important;
+    overflow:hidden !important;
+}
+
+
+.hero .overlay{
+
+    position:absolute !important;
+
+    inset:0 !important;
+
+    display:flex !important;
+
+    flex-direction:column !important;
+
+    justify-content:flex-end !important;
+
+    padding:18px !important;
+
+}
+
+
+/* MATIKAN ABSOLUTE LAMA */
+
+.hero .hero-meta{
+
+    position:static !important;
+
+    order:1 !important;
+
+    margin:0 0 8px 0 !important;
+
+    z-index:5 !important;
+
+}
+
+
+.hero .overlay h1{
+
+    position:static !important;
+
+    order:2 !important;
+
+    margin:0 !important;
+
+    padding:0 !important;
+
+    font-size:21px !important;
+
+    line-height:1.18 !important;
+
+    max-width:100% !important;
+
+    z-index:6 !important;
+
+}
+
+
+/* META STYLE */
+
+.hero .hero-meta label{
+
+    display:inline-block !important;
+
+}
+
+
+.hero .hero-meta small{
+
+    margin-left:8px !important;
+
+}
+
+
+}
+
+
+/* =========================================
+   MOBILE HERO CLEAN FINAL OVERRIDE
+   FLOW META ABOVE TITLE
+========================================= */
+
+@media(max-width:720px){
+
+.hero{
+    position:relative !important;
+    height:290px !important;
+    overflow:hidden !important;
+}
+
+
+.hero .overlay{
+
+    position:absolute !important;
+
+    inset:0 !important;
+
+    display:flex !important;
+
+    flex-direction:column !important;
+
+    justify-content:flex-end !important;
+
+    padding:18px !important;
+
+}
+
+
+.hero .hero-meta{
+
+    position:static !important;
+
+    order:1 !important;
+
+    margin-bottom:8px !important;
+
+    z-index:5 !important;
+
+}
+
+
+.hero .overlay h1{
+
+    position:static !important;
+
+    order:2 !important;
+
+    margin:0 !important;
+
+    padding:0 !important;
+
+    font-size:21px !important;
+
+    line-height:1.18 !important;
+
+    max-width:100% !important;
+
+    z-index:6 !important;
+
+}
+
+
+.hero .hero-meta label{
+
+    display:inline-block !important;
+
+}
+
+
+.hero .hero-meta small{
+
+    margin-left:8px !important;
+
+}
+
+
+}
+
+
+
+
+
+/* HERO META SPACING FINAL */
+
+@media(max-width:720px){
+
+.hero .hero-meta{
+    margin-bottom:12px !important;
+}
+
+}
+
+
+/* HERO TITLE MOBILE FINAL SIZE */
+
+@media(max-width:720px){
+
+.hero .overlay h1{
+    font-size:20px !important;
+    line-height:1.2 !important;
+}
+
+}
+
+
