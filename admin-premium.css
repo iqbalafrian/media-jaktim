@@ -404,3 +404,77 @@ body.light .theme-toggle{
     color:#374151;
 }
 
+/* =========================
+   DARK MODE FIX
+========================= */
+
+body{
+    background:#111827;
+    color:#f9fafb;
+}
+
+body:not(.light){
+    background:#111827;
+    color:#f9fafb;
+}
+
+body:not(.light) .admin-wrap{
+    background:#111827;
+}
+
+body:not(.light) .panel,
+body:not(.light) .dashboard-tools,
+body:not(.light) .admin-stats > div{
+    background:#1f2937;
+    border-color:#374151;
+}
+
+body:not(.light) h1,
+body:not(.light) h2,
+body:not(.light) label,
+body:not(.light) p{
+    color:#f9fafb;
+}
+
+
+body:not(.light) input,
+body:not(.light) textarea,
+body:not(.light) select{
+    background:#111827;
+    color:#fff;
+    border-color:#4b5563;
+}
+
+
+.theme-toggle{
+    width:36px;
+    height:36px;
+    border-radius:50%;
+    border:1px solid #ddd;
+    cursor:pointer;
+}
+/* =================================
+   MOBILE ONLY - THEME BUTTON POSITION
+================================= */
+
+@media(max-width:720px){
+
+.dashboard-title{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:space-between !important;
+    gap:10px !important;
+}
+
+.dashboard-title h1{
+    margin:0 !important;
+}
+
+.theme-toggle{
+    flex:none !important;
+    width:40px !important;
+    height:40px !important;
+}
+
+}
+
